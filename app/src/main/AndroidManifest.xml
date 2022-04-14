@@ -20,6 +20,7 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/calendar_medium_widget_info" />
         </receiver>
+        <service android:name=".CalendarService"/>
 
         <activity
             android:name=".MainActivity"
