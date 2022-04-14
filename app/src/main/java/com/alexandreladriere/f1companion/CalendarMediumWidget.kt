@@ -57,7 +57,6 @@ internal fun updateAppWidget(
     appWidgetManager: AppWidgetManager,
     appWidgetId: Int
 ) {
-    Toast.makeText(context, CURRENT_SEASON_ENDPOINT, Toast.LENGTH_LONG).show()
     val widgetText = context.getString(R.string.appwidget_text)
     // Construct the RemoteViews object
     val views = RemoteViews(context.packageName, R.layout.calendar_medium_widget)
