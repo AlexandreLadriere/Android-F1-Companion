@@ -34,5 +34,8 @@ data class Race(
     val thirdPractice: Session? = null,
 
     @SerializedName("Qualifying")
-    val qualifying: Session? = null
+    val qualifying: Session? = null,
+
+    @SerializedName("Sprint")
+    val sprint: Session? = null
 )
