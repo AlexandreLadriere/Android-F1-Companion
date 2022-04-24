@@ -61,7 +61,7 @@ internal fun updateAppWidget(
             val widgetText = context.getString(R.string.appwidget_text)
             // Construct the RemoteViews object
             val views = RemoteViews(context.packageName, R.layout.calendar_medium_widget)
-            views.setTextViewText(R.id.appwidget_text, nextRace?.raceName ?: "null")
+            views.setTextViewText(R.id.race_num, nextRace?.raceName ?: "null")
             appWidgetManager.updateAppWidget(appWidgetId, views)
         } catch (e: JSONException) {
             e.printStackTrace()

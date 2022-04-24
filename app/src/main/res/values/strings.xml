@@ -1,6 +1,37 @@
 <resources>
     <string name="app_name">F1Companion</string>
     <string name="appwidget_text">EXAMPLE</string>
+    <string name="appwidget_race_num_ex">R1</string>
+    <string name="appwidget_filler">–</string>
+    <string name="appwidget_race_locality_ex">Sakhir</string>
+    <string name="appwidget_race_we_date_ex">18–20</string>
+    <string name="appwidget_race_we_month_ex">MAR</string>
+
+    <string name="appwidget_race_first_session_ex">FP1</string>
+    <string name="appwidget_race_first_session_day_ex">FRI</string>
+    <string name="appwidget_race_first_session_hour_ex">12:00</string>
+
+    <string name="appwidget_race_second_session_ex">FP2</string>
+    <string name="appwidget_race_second_session_day_ex">FRI</string>
+    <string name="appwidget_race_second_session_hour_ex">15:00</string>
+
+    <string name="appwidget_race_third_session_ex">FP3</string>
+    <string name="appwidget_race_third_session_day_ex">SAT</string>
+    <string name="appwidget_race_third_session_hour_ex">12:00</string>
+
+    <string name="appwidget_race_fourth_session_ex">Q1</string>
+    <string name="appwidget_race_fourth_session_day_ex">FRI</string>
+    <string name="appwidget_race_fourth_session_hour_ex">15:00</string>
+
+    <string name="appwidget_race_session_ex">Race</string>
+    <string name="appwidget_race_session_day_ex">SUN</string>
+    <string name="appwidget_race_session_hour_ex">15:00</string>
+
+    <string name="fp1">FP1</string>
+    <string name="fp2">FP2</string>
+    <string name="fp3">FP3</string>
+    <string name="q1">Q1</string>
+
     <string name="add_widget">Add widget</string>
     <string name="app_widget_description">This is an app widget description</string>
 </resources>
