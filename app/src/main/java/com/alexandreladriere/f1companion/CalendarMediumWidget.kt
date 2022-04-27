@@ -5,6 +5,7 @@ import android.appwidget.AppWidgetProvider
 import android.content.Context
 import android.os.Build
 import android.util.Log
+import android.util.TypedValue
 import android.widget.RemoteViews
 import com.alexandreladriere.f1companion.api.ErgastApi
 import com.alexandreladriere.f1companion.api.RetrofitHelper
