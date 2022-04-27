@@ -18,7 +18,7 @@
         android:layout_alignParentEnd="true"
         android:gravity="center"
         android:orientation="horizontal"
-        android:layout_marginBottom="8dp">
+        >
 
         <TextView
             android:id="@+id/textview_race_num"
@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:contentDescription="@string/appwidget_race_num_ex"
             android:text="@string/appwidget_race_num_ex"
-            android:textSize="16sp"
+            android:textSize="@dimen/widget_text_size_0"
             android:textStyle="bold" />
 
         <TextView
@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:contentDescription="@string/appwidget_filler"
             android:text="@string/appwidget_filler"
-            android:textSize="16sp"
+            android:textSize="@dimen/widget_text_size_0"
             android:textStyle="bold" />
 
         <TextView
@@ -45,7 +45,7 @@
 
             android:contentDescription="@string/appwidget_race_locality_ex"
             android:text="@string/appwidget_race_locality_ex"
-            android:textSize="16sp"
+            android:textSize="@dimen/widget_text_size_0"
             android:textStyle="bold" />
 
     </LinearLayout>
@@ -54,70 +54,71 @@
         android:id="@+id/layout_info"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/layout_weekend_title"
         android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:gravity="center"
-        android:orientation="horizontal"
-        android:layout_below="@+id/layout_weekend_title"
-        >
+        android:orientation="horizontal">
 
         <LinearLayout
             android:id="@+id/layout_left"
             android:layout_width="0dp"
-            android:layout_weight = "1"
             android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/widget_margin_0"
+            android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical"
-            android:layout_marginEnd="8dp"
-            android:weightSum="5"
-            >
+            android:weightSum="5">
 
             <LinearLayout
                 android:id="@+id/layout_weekend_date_flag"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
                 android:orientation="horizontal"
-                android:gravity="center_vertical">
+                android:layout_weight="3"
+                android:weightSum="6">
 
                 <LinearLayout
                     android:id="@+id/layout_weekend_date"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
                     android:gravity="start|center_vertical"
-                    android:weightSum="2">
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    android:layout_weight="4">
 
                     <TextView
                         android:id="@+id/textview_weekend_date"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:contentDescription="@string/appwidget_race_we_date_ex"
-                        android:text="@string/appwidget_race_we_date_ex"
-                        android:textSize="12sp"
-                        android:textStyle="bold"
                         android:layout_weight="1"
-                        android:gravity="center_vertical"/>
+                        android:contentDescription="@string/appwidget_race_we_date_ex"
+                        android:gravity="bottom"
+                        android:text="@string/appwidget_race_we_date_ex"
+                        android:textSize="@dimen/widget_text_size_0"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/textview_race_month"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:contentDescription="@string/appwidget_race_we_month_ex"
-                        android:text="@string/appwidget_race_we_month_ex"
-                        android:textSize="12sp"
-                        android:textStyle="bold"
                         android:layout_weight="1"
-                        android:gravity="center_vertical"
-                        />
+                        android:contentDescription="@string/appwidget_race_we_month_ex"
+                        android:gravity="top"
+                        android:text="@string/appwidget_race_we_month_ex"
+                        android:textSize="@dimen/widget_text_size_0"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/layout_weekend_flag"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:gravity="end|center_vertical"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
 
                     <ImageView
                         android:id="@+id/imageview_flag"
@@ -126,40 +127,40 @@
                         android:adjustViewBounds="true"
                         android:contentDescription="TODO"
                         android:focusable="false"
-                        android:src="@drawable/italy"
                         android:paddingTop="4dp"
-                        android:paddingBottom="4dp"/>
+                        android:paddingBottom="4dp"
+                        android:src="@drawable/italy" />
                 </LinearLayout>
 
             </LinearLayout>
 
             <ProgressBar
                 android:id="@+id/separator_left"
-                android:layout_width="match_parent"
                 style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:progress="100"
                 android:indeterminate="true"
-                android:indeterminateTintMode="src_atop"
                 android:indeterminateTint="@color/black"
-                android:layout_marginBottom="8dp"
-                android:layout_marginTop="8dp"/>
+                android:indeterminateTintMode="src_atop"
+                android:progress="100" />
 
             <LinearLayout
                 android:id="@+id/layout_separator_circuit_layout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:gravity="center"
                 android:orientation="vertical"
-                android:gravity="center">
+                android:layout_weight="2">
 
                 <ImageView
                     android:id="@+id/circuit_layout"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:adjustViewBounds="true"
+                    android:contentDescription="TODO"
                     android:focusable="false"
                     android:src="@drawable/sakhir"
-                    android:contentDescription="TODO" />
+                    android:paddingTop="@dimen/widget_padding_0"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -167,59 +168,57 @@
         <LinearLayout
             android:id="@+id/layout_right"
             android:layout_width="0dp"
-            android:layout_weight = "1"
             android:layout_height="match_parent"
-            android:weightSum="5"
+            android:layout_marginStart="@dimen/widget_margin_0"
+            android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical"
-            android:layout_marginStart="8dp">
+            android:weightSum="5">
 
             <LinearLayout
                 android:id="@+id/layout_first_session"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:orientation="horizontal"
-                android:layout_weight = "1"
-                >
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/textview_first_session"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:contentDescription="@string/appwidget_race_first_session_ex"
-                    android:text="@string/appwidget_race_first_session_ex"
-                    android:textSize="12sp"
-                    android:textStyle="bold"
                     android:gravity="center_vertical"
-                    />
+                    android:text="@string/appwidget_race_first_session_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
                     android:gravity="end|center_vertical"
-                    android:weightSum="2"
-                    >
+                    android:orientation="vertical"
+                    android:weightSum="2">
 
                     <TextView
                         android:id="@+id/textview_race_first_session_day"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:contentDescription="@string/appwidget_race_first_session_day_ex"
-                        android:text="@string/appwidget_race_first_session_day_ex"
-                        android:textSize="8sp"
                         android:layout_weight="1"
-                        android:gravity="center_vertical"/>
+                        android:contentDescription="@string/appwidget_race_first_session_day_ex"
+                        android:gravity="center_vertical"
+                        android:text="@string/appwidget_race_first_session_day_ex"
+                        android:textSize="@dimen/widget_text_size_2" />
+
                     <TextView
                         android:id="@+id/textview_race_first_session_hour"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:contentDescription="@string/appwidget_race_first_session_hour_ex"
-                        android:text="@string/appwidget_race_first_session_hour_ex"
-                        android:textSize="8sp"
-                        android:textStyle="bold"
                         android:layout_weight="1"
-                        android:gravity="center_vertical"/>
+                        android:contentDescription="@string/appwidget_race_first_session_hour_ex"
+                        android:gravity="center_vertical"
+                        android:text="@string/appwidget_race_first_session_hour_ex"
+                        android:textSize="@dimen/widget_text_size_2"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
@@ -229,47 +228,46 @@
                 android:id="@+id/layout_second_session"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:orientation="horizontal"
-                android:layout_weight = "1"
-                >
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/textview_second_session"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:contentDescription="@string/appwidget_race_second_session_ex"
+                    android:gravity="center_vertical"
                     android:text="@string/appwidget_race_second_session_ex"
-                    android:textSize="12sp"
-                    android:textStyle="bold"
-                    android:gravity="center_vertical" />
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
                     android:gravity="end|center_vertical"
-                    android:weightSum="2"
-                    >
+                    android:orientation="vertical"
+                    android:weightSum="2">
 
                     <TextView
                         android:id="@+id/textview_race_second_session_day"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
                         android:contentDescription="@string/appwidget_race_second_session_day_ex"
-                        android:text="@string/appwidget_race_second_session_day_ex"
-                        android:textSize="8sp"
                         android:gravity="center_vertical"
-                        android:layout_weight="1"/>
+                        android:text="@string/appwidget_race_second_session_day_ex"
+                        android:textSize="@dimen/widget_text_size_2" />
+
                     <TextView
                         android:id="@+id/textview_race_second_session_hour"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
                         android:contentDescription="@string/appwidget_race_second_session_hour_ex"
-                        android:text="@string/appwidget_race_second_session_hour_ex"
-                        android:textSize="8sp"
-                        android:textStyle="bold"
                         android:gravity="center_vertical"
-                        android:layout_weight="1"/>
+                        android:text="@string/appwidget_race_second_session_hour_ex"
+                        android:textSize="@dimen/widget_text_size_2"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
@@ -279,106 +277,104 @@
                 android:id="@+id/layout_third_session"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:orientation="horizontal"
-                android:layout_weight = "1"
-                >
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/textview_third_session"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:contentDescription="@string/appwidget_race_third_session_ex"
+                    android:gravity="center_vertical"
                     android:text="@string/appwidget_race_third_session_ex"
-                    android:textSize="12sp"
-                    android:textStyle="bold"
-                    android:gravity="center_vertical" />
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
                     android:gravity="end|center_vertical"
-                    android:weightSum="2"
-                    >
+                    android:orientation="vertical"
+                    android:weightSum="2">
 
                     <TextView
                         android:id="@+id/textview_race_third_session_day"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
                         android:contentDescription="@string/appwidget_race_third_session_day_ex"
-                        android:text="@string/appwidget_race_third_session_day_ex"
-                        android:textSize="8sp"
                         android:gravity="center_vertical"
-                        android:layout_weight="1"/>
+                        android:text="@string/appwidget_race_third_session_day_ex"
+                        android:textSize="@dimen/widget_text_size_2" />
+
                     <TextView
                         android:id="@+id/textview_race_third_session_hour"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
                         android:contentDescription="@string/appwidget_race_third_session_hour_ex"
-                        android:text="@string/appwidget_race_third_session_hour_ex"
-                        android:textSize="8sp"
-                        android:textStyle="bold"
                         android:gravity="center_vertical"
-                        android:layout_weight="1"/>
+                        android:text="@string/appwidget_race_third_session_hour_ex"
+                        android:textSize="@dimen/widget_text_size_2"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
             </LinearLayout>
 
             <ProgressBar
                 android:id="@+id/separator_right"
-                android:layout_width="match_parent"
                 style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:progress="100"
                 android:indeterminate="true"
+                android:indeterminateTint="@color/black"
                 android:indeterminateTintMode="src_atop"
-                android:indeterminateTint="@color/black"/>
+                android:progress="100" />
 
             <LinearLayout
                 android:id="@+id/layout_fourth_session"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:orientation="horizontal"
-                android:layout_weight = "1"
-                >
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/textview_fourth_session"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:contentDescription="@string/appwidget_race_fourth_session_ex"
+                    android:gravity="center_vertical"
                     android:text="@string/appwidget_race_fourth_session_ex"
-                    android:textSize="12sp"
-                    android:textStyle="bold"
-                    android:gravity="center_vertical" />
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
                     android:gravity="end|center_vertical"
-                    android:weightSum="2"
-                    >
+                    android:orientation="vertical"
+                    android:weightSum="2">
 
                     <TextView
                         android:id="@+id/textview_race_fourth_session_day"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
                         android:contentDescription="@string/appwidget_race_fourth_session_day_ex"
-                        android:text="@string/appwidget_race_fourth_session_day_ex"
-                        android:textSize="8sp"
                         android:gravity="center_vertical"
-                        android:layout_weight="1"/>
+                        android:text="@string/appwidget_race_fourth_session_day_ex"
+                        android:textSize="@dimen/widget_text_size_2" />
+
                     <TextView
                         android:id="@+id/textview_race_fourth_session_hour"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
                         android:contentDescription="@string/appwidget_race_fourth_session_hour_ex"
-                        android:text="@string/appwidget_race_fourth_session_hour_ex"
-                        android:textSize="8sp"
-                        android:textStyle="bold"
                         android:gravity="center_vertical"
-                        android:layout_weight="1"/>
+                        android:text="@string/appwidget_race_fourth_session_hour_ex"
+                        android:textSize="@dimen/widget_text_size_2"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
@@ -388,48 +384,46 @@
                 android:id="@+id/layout_race_session"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:orientation="horizontal"
-                android:layout_weight = "1"
-                >
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/textview_race_session"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:contentDescription="@string/appwidget_race_session_ex"
-                    android:text="@string/appwidget_race_session_ex"
-                    android:textSize="12sp"
-                    android:textStyle="bold"
                     android:gravity="center_vertical"
-                />
+                    android:text="@string/appwidget_race_session_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
                     android:gravity="end|center_vertical"
-                    android:weightSum="2"
-                    >
+                    android:orientation="vertical"
+                    android:weightSum="2">
 
                     <TextView
                         android:id="@+id/textview_race_session_day"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
                         android:contentDescription="@string/appwidget_race_session_day_ex"
-                        android:text="@string/appwidget_race_session_day_ex"
-                        android:textSize="8sp"
                         android:gravity="center_vertical"
-                        android:layout_weight="1"/>
+                        android:text="@string/appwidget_race_session_day_ex"
+                        android:textSize="@dimen/widget_text_size_2" />
+
                     <TextView
                         android:id="@+id/textview_race_session_hour"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
                         android:contentDescription="@string/appwidget_race_session_hour_ex"
-                        android:text="@string/appwidget_race_session_hour_ex"
-                        android:textSize="8sp"
-                        android:textStyle="bold"
                         android:gravity="center_vertical"
-                        android:layout_weight="1"/>
+                        android:text="@string/appwidget_race_session_hour_ex"
+                        android:textSize="@dimen/widget_text_size_2"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
             </LinearLayout>
