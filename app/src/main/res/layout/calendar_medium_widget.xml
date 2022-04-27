@@ -1,47 +1,87 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     style="@style/Widget.F1Companion.AppWidget.Container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:theme="@style/Theme.F1Companion.AppWidgetContainer">
+    android:theme="@style/Theme.F1Companion.AppWidgetContainer"
+    android:gravity="center">
+
 
     <LinearLayout
+        android:id="@+id/layout_weekend_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:id="@+id/race_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            android:contentDescription="@string/appwidget_race_num_ex"
+            android:text="@string/appwidget_race_num_ex"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/filler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            android:contentDescription="@string/appwidget_filler"
+            android:text="@string/appwidget_filler"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/race_locality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            android:contentDescription="@string/appwidget_race_locality_ex"
+            android:text="@string/appwidget_race_locality_ex"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_weekend_date_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layout_weekend_title">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:id="@+id/layout_weekend_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/race_num"
+                android:id="@+id/weekend_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="1dp"
                 android:layout_marginTop="1dp"
-                android:layout_marginEnd="1dp"
-                android:layout_marginBottom="1dp"
-                android:contentDescription="@string/appwidget_race_num_ex"
-                android:text="@string/appwidget_race_num_ex"
+                android:contentDescription="@string/appwidget_race_we_date_ex"
+                android:text="@string/appwidget_race_we_date_ex"
                 android:textSize="12sp"
-                android:textStyle="bold"
-                android:layout_gravity="center"/>
-
-            <TextView
-                android:id="@+id/filler"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="1dp"
-                android:layout_marginTop="1dp"
-                android:layout_marginEnd="1dp"
-                android:layout_marginBottom="1dp"
-                android:contentDescription="@string/appwidget_filler"
-                android:text="@string/appwidget_filler"
-                android:textSize="12sp"
-                android:textStyle="bold"
-                android:layout_gravity="center"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/race_month"
@@ -51,98 +91,49 @@
                 android:layout_marginTop="1dp"
                 android:layout_marginEnd="1dp"
                 android:layout_marginBottom="1dp"
-                android:contentDescription="@string/appwidget_race_locality_ex"
-                android:text="@string/appwidget_race_locality_ex"
+                android:contentDescription="@string/appwidget_race_we_month_ex"
+                android:text="@string/appwidget_race_we_month_ex"
                 android:textSize="12sp"
                 android:textStyle="bold"
-                android:layout_gravity="center"/>
-
+                />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/layout_weekend_flag"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/weekend_date"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="1dp"
-                        android:layout_marginTop="1dp"
-                        android:layout_marginEnd="1dp"
-                        android:layout_marginBottom="1dp"
-                        android:contentDescription="@string/appwidget_race_we_date_ex"
-                        android:text="@string/appwidget_race_we_date_ex"
-                        android:textSize="12sp"
-                        android:textStyle="bold"
-                        android:layout_gravity="start"/>
-
-                    <TextView
-                        android:id="@+id/race_locality"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="1dp"
-                        android:layout_marginTop="1dp"
-                        android:layout_marginEnd="1dp"
-                        android:layout_marginBottom="1dp"
-                        android:contentDescription="@string/appwidget_race_we_month_ex"
-                        android:text="@string/appwidget_race_we_month_ex"
-                        android:textSize="12sp"
-                        android:textStyle="bold"
-                        android:layout_gravity="start"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:adjustViewBounds="true"
-                        android:focusable="false"
-                        android:maxHeight="20dp"
-                        android:maxWidth="20dp"
-                        android:layout_gravity="end"
-                        android:src="@drawable/italy">
-                    </ImageView>
-
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:gravity="end"
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
+                android:contentDescription="TODO"
                 android:focusable="false"
-                android:maxHeight="40dp"
-                android:maxWidth="40dp"
-                android:layout_gravity="end"
-                android:src="@drawable/sakhir">
-            </ImageView>
+                android:src="@drawable/italy" />
         </LinearLayout>
 
     </LinearLayout>
-</LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/separator_left"
+        android:layout_width="match_parent"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_height="1dp"
+        android:layout_below="@+id/layout_weekend_date_flag"
+        android:progress="100"
+        android:indeterminate="true"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="@color/black"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:focusable="false"
+        android:src="@drawable/sakhir"
+        android:layout_below="@+id/separator_left"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
