@@ -26,9 +26,9 @@
             android:layout_height="wrap_content"
             android:contentDescription="@string/appwidget_race_num_ex"
             android:text="@string/appwidget_race_num_ex"
+            android:textColor="@color/formula_red"
             android:textSize="@dimen/widget_text_size_0"
-            android:textStyle="bold"
-            android:textColor="@color/formula_red"/>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textview_filler"
@@ -36,20 +36,19 @@
             android:layout_height="wrap_content"
             android:contentDescription="@string/appwidget_filler"
             android:text="@string/appwidget_filler"
+            android:textColor="@color/formula_red"
             android:textSize="@dimen/widget_text_size_0"
-            android:textStyle="bold"
-            android:textColor="@color/formula_red"/>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textview_race_locality"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:contentDescription="@string/appwidget_race_locality_ex"
             android:text="@string/appwidget_race_locality_ex"
+            android:textColor="@color/formula_red"
             android:textSize="@dimen/widget_text_size_0"
-            android:textStyle="bold"
-            android:textColor="@color/formula_red"/>
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -102,7 +101,8 @@
                         android:gravity="bottom"
                         android:text="@string/appwidget_race_we_date_ex"
                         android:textSize="@dimen/widget_text_size_0"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        />
 
                     <TextView
                         android:id="@+id/textview_race_month"
