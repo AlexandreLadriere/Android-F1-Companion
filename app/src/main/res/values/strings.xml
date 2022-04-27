@@ -2,7 +2,7 @@
     <string name="app_name">F1Companion</string>
     <string name="appwidget_text">EXAMPLE</string>
     <string name="appwidget_race_num_ex">R1</string>
-    <string name="appwidget_filler">–</string>
+    <string name="appwidget_filler">&#160;–&#160;</string>
     <string name="appwidget_race_locality_ex">Sakhir</string>
     <string name="appwidget_race_we_date_ex">18–20</string>
     <string name="appwidget_race_we_month_ex">MAR</string>
