@@ -11,4 +11,9 @@
     <color name="light_blue_200">#FF81D4FA</color>
     <color name="light_blue_600">#FF039BE5</color>
     <color name="light_blue_900">#FF01579B</color>
+    <color name="light_grey">#7E7E7E</color>
+    <color name="formula_red">#FF1801</color>
+    <color name="formula_red_background_light">#2E0500</color>
+    <color name="formula_red_background_dark">#290400</color>
+    <color name="background_dark">#313131</color>
 </resources>

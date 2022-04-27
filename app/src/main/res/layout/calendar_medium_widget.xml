@@ -27,7 +27,8 @@
             android:contentDescription="@string/appwidget_race_num_ex"
             android:text="@string/appwidget_race_num_ex"
             android:textSize="@dimen/widget_text_size_0"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="@color/formula_red"/>
 
         <TextView
             android:id="@+id/textview_filler"
@@ -36,7 +37,8 @@
             android:contentDescription="@string/appwidget_filler"
             android:text="@string/appwidget_filler"
             android:textSize="@dimen/widget_text_size_0"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="@color/formula_red"/>
 
         <TextView
             android:id="@+id/textview_race_locality"
@@ -46,7 +48,8 @@
             android:contentDescription="@string/appwidget_race_locality_ex"
             android:text="@string/appwidget_race_locality_ex"
             android:textSize="@dimen/widget_text_size_0"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="@color/formula_red"/>
 
     </LinearLayout>
 
@@ -59,7 +62,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        >
 
         <LinearLayout
             android:id="@+id/layout_left"
@@ -140,7 +144,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:indeterminate="true"
-                android:indeterminateTint="@color/black"
+                android:indeterminateTint="@color/light_grey"
                 android:indeterminateTintMode="src_atop"
                 android:progress="100" />
 
@@ -327,7 +331,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:indeterminate="true"
-                android:indeterminateTint="@color/black"
+                android:indeterminateTint="@color/light_grey"
                 android:indeterminateTintMode="src_atop"
                 android:progress="100" />
 
