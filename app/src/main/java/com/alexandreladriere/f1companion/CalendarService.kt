@@ -20,7 +20,7 @@ class CalendarService : Service() {
             // get API info
             // Update widget View (https://medium.com/android-bits/android-widgets-ad3d166458d3)
             val view = RemoteViews(packageName, R.layout.calendar_medium_widget)
-            view.setTextViewText(R.id.appwidget_text, "MAJ")
+            //view.setTextViewText(R.id.appwidget_text, "MAJ")
             val theWidget = ComponentName(this, CalendarMediumWidget::class.java)
             val manager = AppWidgetManager.getInstance(this)
             manager.updateAppWidget(theWidget, view)
