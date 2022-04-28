@@ -133,7 +133,7 @@
                         android:focusable="false"
                         android:paddingTop="4dp"
                         android:paddingBottom="4dp"
-                        android:src="@drawable/italy" />
+                        android:src="@drawable/bahrain" />
                 </LinearLayout>
 
             </LinearLayout>
