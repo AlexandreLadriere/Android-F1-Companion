@@ -3,18 +3,18 @@ package com.alexandreladriere.f1companion
 import android.appwidget.AppWidgetManager
 import android.appwidget.AppWidgetProvider
 import android.content.Context
-import android.os.Build
+import android.content.res.Resources
 import android.util.Log
-import android.util.TypedValue
 import android.widget.RemoteViews
 import com.alexandreladriere.f1companion.api.ErgastApi
 import com.alexandreladriere.f1companion.api.RetrofitHelper
+import com.alexandreladriere.f1companion.datamodel.Race
 import com.alexandreladriere.f1companion.datamodel.SeasonRacesResponse
+import com.alexandreladriere.f1companion.datamodel.monthMap
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import org.json.JSONException
 import java.text.SimpleDateFormat
-import java.time.Instant
 import java.util.*
 
 
@@ -58,23 +58,15 @@ internal fun updateAppWidget(
         )
         try {
             // Log.d("Retrofit: ", raceZero.toString())
-
-            val widgetText = context.getString(R.string.appwidget_text)
             // Construct the RemoteViews object
             val views = RemoteViews(context.packageName, R.layout.calendar_medium_widget)
+            updateWidgetCalendarUI(context, views, nextRace)
             //views.setTextViewText(R.id.race_num, nextRace?.raceName ?: "null")
             appWidgetManager.updateAppWidget(appWidgetId, views)
         } catch (e: JSONException) {
             e.printStackTrace()
         }
     }
-    // val widgetText = context.getString(R.string.appwidget_text)
-    // Construct the RemoteViews object
-    // val views = RemoteViews(context.packageName, R.layout.calendar_medium_widget)
-    // views.setTextViewText(R.id.appwidget_text, widgetText)
-
-    // Instruct the widget manager to update the widget
-    // appWidgetManager.updateAppWidget(appWidgetId, views)
 }
 
 fun getNextRaceIndex(responseBody: SeasonRacesResponse?): Int {
@@ -99,5 +91,51 @@ fun getNextRaceIndex(responseBody: SeasonRacesResponse?): Int {
         }
     }
     return -1
+}
+
+fun updateWidgetCalendarUI(context: Context, widgetView: RemoteViews, race: Race?) {
+    // update title:
+    widgetView.setTextViewText(R.id.textview_race_num, race?.round ?: "null")
+    widgetView.setTextViewText(R.id.textview_race_locality, race?.circuit?.location?.locality ?: "null")
+    // update we date
+    val weDays = race?.firstPractice?.date.toString().takeLast(2) + "-" + race?.date.toString().takeLast(2)
+    val weMonth = monthMap[race?.date.toString().substringAfter("-", "").substringBefore("-", "")]
+    widgetView.setTextViewText(R.id.textview_weekend_date, weDays ?: "null")
+    widgetView.setTextViewText(R.id.textview_race_month, weMonth ?: "null")
+    // update country flag
+    val resources: Resources = context.resources
+    val flagResourceId = resources.getIdentifier(race?.circuit?.location?.country.toString().lowercase() + "", "drawable",
+        context.packageName
+    )
+    widgetView.setImageViewResource(R.id.imageview_flag, flagResourceId)
+    // update circuit layout
+    val circuitLayoutResourceId = resources.getIdentifier(race?.circuit?.circuitId.toString().lowercase() + "_layout", "drawable",
+        context.packageName
+    )
+    widgetView.setImageViewResource(R.id.circuit_layout, circuitLayoutResourceId)
+    // Update Session
+    // FP1 should always be the firstSession, and Race the last one
+    widgetView.setTextViewText(R.id.textview_race_first_session_hour, race?.firstPractice?.time.toString().take(5) ?: "null")
+    widgetView.setTextViewText(R.id.textview_race_session_hour, race?.time.toString().take(5) ?: "null")
+    val hasSprint = race?.sprint != null
+    if(hasSprint) {
+        widgetView.setTextViewText(R.id.textview_second_session, "Q1" ?: "null")
+        widgetView.setTextViewText(R.id.textview_race_second_session_hour, race?.qualifying?.time.toString().take(5) ?: "null")
+
+        widgetView.setTextViewText(R.id.textview_third_session, "FP2" ?: "null")
+        widgetView.setTextViewText(R.id.textview_race_third_session_hour, race?.secondPractice?.time.toString().take(5) ?: "null")
+
+        widgetView.setTextViewText(R.id.textview_fourth_session, "Sprint" ?: "null")
+        widgetView.setTextViewText(R.id.textview_race_fourth_session_hour, race?.sprint?.time.toString().take(5) ?: "null")
+    } else {
+        widgetView.setTextViewText(R.id.textview_second_session, "FP2" ?: "null")
+        widgetView.setTextViewText(R.id.textview_race_second_session_hour, race?.secondPractice?.time.toString().take(5) ?: "null")
+
+        widgetView.setTextViewText(R.id.textview_third_session, "FP3" ?: "null")
+        widgetView.setTextViewText(R.id.textview_race_third_session_hour, race?.thirdPractice?.time.toString().take(5) ?: "null")
+
+        widgetView.setTextViewText(R.id.textview_fourth_session, "Q1" ?: "null")
+        widgetView.setTextViewText(R.id.textview_race_fourth_session_hour, race?.qualifying?.time.toString().take(5) ?: "null")
+    }
 }
 
