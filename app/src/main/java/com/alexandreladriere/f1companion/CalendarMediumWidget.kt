@@ -54,7 +54,8 @@ internal fun updateAppWidget(
     // launching a new coroutine
     GlobalScope.launch {
         val result = ergastApi.getSeasonRaces()
-        val nextRace = result.body()?.data?.raceTable?.racesList?.get(getNextRaceIndex(result.body()))
+        //val nextRace = result.body()?.data?.raceTable?.racesList?.get(getNextRaceIndex(result.body()))
+        val nextRace = result.body()?.data?.raceTable?.racesList?.get(21)
         try {
             // Construct the RemoteViews object
             val views = RemoteViews(context.packageName, R.layout.calendar_medium_widget)
@@ -105,12 +106,12 @@ fun updateWidgetCalendarUI(context: Context, widgetView: RemoteViews, race: Race
     widgetView.setTextViewText(R.id.textview_race_month, weMonth ?: "null")
     // update country flag
     val resources: Resources = context.resources
-    val flagResourceId = resources.getIdentifier(race?.circuit?.location?.country.toString().lowercase() + "", "drawable",
+    val flagResourceId = resources.getIdentifier(race?.circuit?.location?.country.toString().replace(" ", "_").lowercase() + "", "drawable",
         context.packageName
     )
     widgetView.setImageViewResource(R.id.imageview_flag, flagResourceId)
     // update circuit layout
-    val circuitLayoutResourceId = resources.getIdentifier(race?.circuit?.circuitId.toString().lowercase() + "_layout", "drawable",
+    val circuitLayoutResourceId = resources.getIdentifier(race?.circuit?.circuitId.toString().replace(" ", "_").lowercase() + "_layout", "drawable",
         context.packageName
     )
     widgetView.setImageViewResource(R.id.circuit_layout, circuitLayoutResourceId)

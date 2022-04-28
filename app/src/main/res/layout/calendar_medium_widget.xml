@@ -118,7 +118,7 @@
                 <LinearLayout
                     android:id="@+id/layout_weekend_flag"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:gravity="end|center_vertical"
                     android:orientation="horizontal"
                     android:layout_weight="2">

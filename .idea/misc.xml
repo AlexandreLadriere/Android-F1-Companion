@@ -5,6 +5,9 @@
       <map>
         <entry key="..\:/Dev/F1Companion/app/src/main/res/drawable/round_outline.xml" value="0.2365" />
         <entry key="..\:/Dev/F1Companion/app/src/main/res/drawable/rounded_background_black.xml" value="0.1765" />
+        <entry key="..\:/Dev/F1Companion/app/src/main/res/drawable/rounded_rectangle_dark_background.xml" value="0.2365" />
+        <entry key="..\:/Dev/F1Companion/app/src/main/res/drawable/rounded_rectangle_darkred2.xml" value="0.2365" />
+        <entry key="..\:/Dev/F1Companion/app/src/main/res/drawable/rounded_rectangle_white.xml" value="0.2365" />
         <entry key="..\:/Dev/F1Companion/app/src/main/res/font-v26/f1_fontfamily.xml" value="0.2875" />
         <entry key="..\:/Dev/F1Companion/app/src/main/res/font/f1_fontfamily.xml" value="0.2875" />
         <entry key="..\:/Dev/F1Companion/app/src/main/res/layout/activity_main.xml" value="0.17135416666666667" />
