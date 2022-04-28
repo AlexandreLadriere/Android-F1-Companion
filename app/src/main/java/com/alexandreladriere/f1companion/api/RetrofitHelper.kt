@@ -1,6 +1,6 @@
 package com.alexandreladriere.f1companion.api
 
-import com.alexandreladriere.f1companion.datamodel.BACKEND_ENDPOINT
+import com.alexandreladriere.f1companion.utils.BACKEND_ENDPOINT
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

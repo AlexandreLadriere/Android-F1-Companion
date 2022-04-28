@@ -1,4 +1,4 @@
-package com.alexandreladriere.f1companion.datamodel
+package com.alexandreladriere.f1companion.utils
 
 const val BACKEND_ENDPOINT = "http://ergast.com"
 const val FORMAT_DATE = "yyyy-MM-dd'T'HH:mm:ss'Z'"

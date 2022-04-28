@@ -8,6 +8,7 @@ import android.widget.RemoteViews
 import com.alexandreladriere.f1companion.api.ErgastApi
 import com.alexandreladriere.f1companion.api.RetrofitHelper
 import com.alexandreladriere.f1companion.datamodel.*
+import com.alexandreladriere.f1companion.utils.*
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import org.json.JSONException
@@ -137,25 +138,4 @@ fun updateWidgetCalendarUI(context: Context, widgetView: RemoteViews, race: Race
         widgetView.setTextViewText(R.id.textview_fourth_session, "Q1" ?: "null")
         widgetView.setTextViewText(R.id.textview_race_fourth_session_hour, getHourMinuteFromDate(qualifyingDate) ?: "null")
     }
-}
-
-fun utcToCurrentTimeZone(dateFormat: String, dateStringToConvert: String): Date {
-    val sdf = SimpleDateFormat(dateFormat, Locale.getDefault())
-    sdf.timeZone = TimeZone.getTimeZone("UTC")
-    return sdf.parse(dateStringToConvert) as Date
-}
-
-fun getHourMinuteFromDate(date: Date): String {
-    val sdf = SimpleDateFormat(FORMAT_HOUR_MINUTE, Locale.getDefault())
-    return sdf.format(date)
-}
-
-fun getDayFromDate(date: Date): String {
-    val sdf = SimpleDateFormat(FORMAT_DAY, Locale.getDefault())
-    return sdf.format(date)
-}
-
-fun getMonthFromDate(date: Date): String {
-    val sdf = SimpleDateFormat(FORMAT_MONTH, Locale.getDefault())
-    return sdf.format(date)
 }
