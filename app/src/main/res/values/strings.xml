@@ -33,5 +33,5 @@
     <string name="q1">Q1</string>
 
     <string name="add_widget">Add widget</string>
-    <string name="app_widget_description">This is an app widget description</string>
+    <string name="app_widget_description">This widget displays main info of the next F1 race</string>
 </resources>

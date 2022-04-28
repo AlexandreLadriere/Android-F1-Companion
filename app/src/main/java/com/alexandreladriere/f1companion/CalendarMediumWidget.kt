@@ -4,7 +4,11 @@ import android.appwidget.AppWidgetManager
 import android.appwidget.AppWidgetProvider
 import android.content.Context
 import android.content.res.Resources
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
+import android.widget.ImageView
 import android.widget.RemoteViews
+import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory
 import com.alexandreladriere.f1companion.api.ErgastApi
 import com.alexandreladriere.f1companion.api.RetrofitHelper
 import com.alexandreladriere.f1companion.datamodel.*

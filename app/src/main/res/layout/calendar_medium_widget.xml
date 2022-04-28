@@ -89,14 +89,12 @@
                     android:layout_height="match_parent"
                     android:gravity="start|center_vertical"
                     android:orientation="vertical"
-                    android:weightSum="2"
                     android:layout_weight="4">
 
                     <TextView
                         android:id="@+id/textview_weekend_date"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:contentDescription="@string/appwidget_race_we_date_ex"
                         android:gravity="bottom"
                         android:text="@string/appwidget_race_we_date_ex"
@@ -106,20 +104,21 @@
 
                     <TextView
                         android:id="@+id/textview_race_month"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:contentDescription="@string/appwidget_race_we_month_ex"
                         android:gravity="top"
                         android:text="@string/appwidget_race_we_month_ex"
                         android:textSize="@dimen/widget_text_size_0"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:background="@drawable/rounded_rectangle_white"/>
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/layout_weekend_flag"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:gravity="end|center_vertical"
                     android:orientation="horizontal"
                     android:layout_weight="2">
@@ -133,7 +132,7 @@
                         android:focusable="false"
                         android:paddingTop="4dp"
                         android:paddingBottom="4dp"
-                        android:src="@drawable/bahrain" />
+                        android:src="@drawable/bahrain"/>
                 </LinearLayout>
 
             </LinearLayout>

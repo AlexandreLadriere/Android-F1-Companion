@@ -1,7 +1,12 @@
 package com.alexandreladriere.f1companion.utils
 
+import android.R
+import android.graphics.BitmapFactory
+import android.widget.ImageView
+import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory
 import java.text.SimpleDateFormat
 import java.util.*
+
 
 fun utcToCurrentTimeZone(dateFormat: String, dateStringToConvert: String): Date {
     val sdf = SimpleDateFormat(dateFormat, Locale.getDefault())
