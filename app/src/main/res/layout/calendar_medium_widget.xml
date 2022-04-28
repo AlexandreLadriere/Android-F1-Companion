@@ -163,7 +163,7 @@
                     android:adjustViewBounds="true"
                     android:contentDescription="TODO"
                     android:focusable="false"
-                    android:src="@drawable/sakhir"
+                    android:src="@drawable/bahrain_layout"
                     android:paddingTop="@dimen/widget_padding_0"/>
             </LinearLayout>
         </LinearLayout>
