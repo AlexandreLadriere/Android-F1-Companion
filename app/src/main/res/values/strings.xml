@@ -20,7 +20,7 @@
     <string name="appwidget_race_third_session_hour_ex">12:00</string>
 
     <string name="appwidget_race_fourth_session_ex">Q1</string>
-    <string name="appwidget_race_fourth_session_day_ex">FRI</string>
+    <string name="appwidget_race_fourth_session_day_ex">SAT</string>
     <string name="appwidget_race_fourth_session_hour_ex">15:00</string>
 
     <string name="appwidget_race_session_ex">Race</string>

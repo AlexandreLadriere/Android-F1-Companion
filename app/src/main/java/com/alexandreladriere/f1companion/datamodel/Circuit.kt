@@ -13,5 +13,5 @@ data class Circuit(
     val circuitName: String? = null,
 
     @SerializedName("Location")
-    val Location: Location? = null
+    val location: Location? = null
 )
