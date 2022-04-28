@@ -157,7 +157,7 @@
 
                 <ImageView
                     android:id="@+id/circuit_layout"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:adjustViewBounds="true"
                     android:contentDescription="TODO"
@@ -208,7 +208,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:contentDescription="@string/appwidget_race_first_session_day_ex"
-                        android:gravity="center_vertical"
+                        android:gravity="bottom"
                         android:text="@string/appwidget_race_first_session_day_ex"
                         android:textSize="@dimen/widget_text_size_2" />
 
@@ -218,7 +218,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:contentDescription="@string/appwidget_race_first_session_hour_ex"
-                        android:gravity="center_vertical"
+                        android:gravity="top"
                         android:text="@string/appwidget_race_first_session_hour_ex"
                         android:textSize="@dimen/widget_text_size_2"
                         android:textStyle="bold" />
@@ -257,7 +257,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:contentDescription="@string/appwidget_race_second_session_day_ex"
-                        android:gravity="center_vertical"
+                        android:gravity="bottom"
                         android:text="@string/appwidget_race_second_session_day_ex"
                         android:textSize="@dimen/widget_text_size_2" />
 
@@ -267,7 +267,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:contentDescription="@string/appwidget_race_second_session_hour_ex"
-                        android:gravity="center_vertical"
+                        android:gravity="top"
                         android:text="@string/appwidget_race_second_session_hour_ex"
                         android:textSize="@dimen/widget_text_size_2"
                         android:textStyle="bold" />
@@ -306,7 +306,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:contentDescription="@string/appwidget_race_third_session_day_ex"
-                        android:gravity="center_vertical"
+                        android:gravity="bottom"
                         android:text="@string/appwidget_race_third_session_day_ex"
                         android:textSize="@dimen/widget_text_size_2" />
 
@@ -316,7 +316,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:contentDescription="@string/appwidget_race_third_session_hour_ex"
-                        android:gravity="center_vertical"
+                        android:gravity="top"
                         android:text="@string/appwidget_race_third_session_hour_ex"
                         android:textSize="@dimen/widget_text_size_2"
                         android:textStyle="bold" />
@@ -364,7 +364,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:contentDescription="@string/appwidget_race_fourth_session_day_ex"
-                        android:gravity="center_vertical"
+                        android:gravity="bottom"
                         android:text="@string/appwidget_race_fourth_session_day_ex"
                         android:textSize="@dimen/widget_text_size_2" />
 
@@ -374,7 +374,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:contentDescription="@string/appwidget_race_fourth_session_hour_ex"
-                        android:gravity="center_vertical"
+                        android:gravity="top"
                         android:text="@string/appwidget_race_fourth_session_hour_ex"
                         android:textSize="@dimen/widget_text_size_2"
                         android:textStyle="bold" />
@@ -413,7 +413,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:contentDescription="@string/appwidget_race_session_day_ex"
-                        android:gravity="center_vertical"
+                        android:gravity="bottom"
                         android:text="@string/appwidget_race_session_day_ex"
                         android:textSize="@dimen/widget_text_size_2" />
 
@@ -423,7 +423,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:contentDescription="@string/appwidget_race_session_hour_ex"
-                        android:gravity="center_vertical"
+                        android:gravity="top"
                         android:text="@string/appwidget_race_session_hour_ex"
                         android:textSize="@dimen/widget_text_size_2"
                         android:textStyle="bold" />

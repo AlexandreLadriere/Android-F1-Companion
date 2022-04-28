@@ -91,7 +91,7 @@ fun getNextRaceIndex(responseBody: SeasonRacesResponse?): Int {
 
 fun updateWidgetCalendarUI(context: Context, widgetView: RemoteViews, race: Race?) {
     // update title:
-    widgetView.setTextViewText(R.id.textview_race_num, race?.round ?: "null")
+    widgetView.setTextViewText(R.id.textview_race_num, "R" + race?.round ?: "null")
     widgetView.setTextViewText(R.id.textview_race_locality, race?.circuit?.location?.locality ?: "null")
     // update we date
     val firstPracticeDate = utcToCurrentTimeZone(FORMAT_DATE, race?.firstPractice?.date.toString() + "T" +  race?.firstPractice?.time.toString())
