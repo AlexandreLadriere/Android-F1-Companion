@@ -54,8 +54,7 @@ internal fun updateAppWidget(
     // launching a new coroutine
     GlobalScope.launch {
         val result = ergastApi.getSeasonRaces()
-        //val nextRace = result.body()?.data?.raceTable?.racesList?.get(getNextRaceIndex(result.body()))
-        val nextRace = result.body()?.data?.raceTable?.racesList?.get(21)
+        val nextRace = result.body()?.data?.raceTable?.racesList?.get(getNextRaceIndex(result.body()))
         try {
             // Construct the RemoteViews object
             val views = RemoteViews(context.packageName, R.layout.calendar_medium_widget)
