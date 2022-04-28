@@ -4,7 +4,6 @@ import android.appwidget.AppWidgetManager
 import android.appwidget.AppWidgetProvider
 import android.content.Context
 import android.content.res.Resources
-import android.util.Log
 import android.widget.RemoteViews
 import com.alexandreladriere.f1companion.api.ErgastApi
 import com.alexandreladriere.f1companion.api.RetrofitHelper
@@ -64,7 +63,7 @@ internal fun updateAppWidget(
 
 fun getNextRaceIndex(responseBody: SeasonRacesResponse?): Int {
     // not using Instant instant = Instant.now(); because it requires API26 at least
-    var sdf = SimpleDateFormat(FORMAT_DATE, Locale.getDefault())
+    val sdf = SimpleDateFormat(FORMAT_DATE, Locale.getDefault())
     val currentDateStr = sdf.format(Date())
     val currentDate: Date = sdf.parse(currentDateStr) as Date
     var raceDatePrevious: Date
@@ -141,22 +140,22 @@ fun updateWidgetCalendarUI(context: Context, widgetView: RemoteViews, race: Race
 }
 
 fun utcToCurrentTimeZone(dateFormat: String, dateStringToConvert: String): Date {
-    var sdf = SimpleDateFormat(dateFormat, Locale.getDefault())
+    val sdf = SimpleDateFormat(dateFormat, Locale.getDefault())
     sdf.timeZone = TimeZone.getTimeZone("UTC")
     return sdf.parse(dateStringToConvert) as Date
 }
 
 fun getHourMinuteFromDate(date: Date): String {
-    var sdf = SimpleDateFormat(FORMAT_HOUR_MINUTE, Locale.getDefault())
+    val sdf = SimpleDateFormat(FORMAT_HOUR_MINUTE, Locale.getDefault())
     return sdf.format(date)
 }
 
 fun getDayFromDate(date: Date): String {
-    var sdf = SimpleDateFormat(FORMAT_DAY, Locale.getDefault())
+    val sdf = SimpleDateFormat(FORMAT_DAY, Locale.getDefault())
     return sdf.format(date)
 }
 
 fun getMonthFromDate(date: Date): String {
-    var sdf = SimpleDateFormat(FORMAT_MONTH, Locale.getDefault())
+    val sdf = SimpleDateFormat(FORMAT_MONTH, Locale.getDefault())
     return sdf.format(date)
 }
