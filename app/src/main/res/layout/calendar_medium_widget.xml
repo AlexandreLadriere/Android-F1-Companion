@@ -16,8 +16,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:gravity="center"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/textview_race_num"
