@@ -1,5 +1,6 @@
 package com.alexandreladriere.f1companion.utils
 
+import com.alexandreladriere.f1companion.datamodel.SeasonRacesResponse
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -23,4 +24,31 @@ fun getDayFromDate(date: Date): String {
 fun getMonthFromDate(date: Date): String {
     val sdf = SimpleDateFormat(FORMAT_MONTH, Locale.getDefault())
     return sdf.format(date)
+}
+
+fun getNextRaceIndex(responseBody: SeasonRacesResponse?): Int {
+    // not using Instant instant = Instant.now(); because it requires API26 at least
+    val currentDate: Date = getCurrentDate()
+    var raceDatePrevious: Date
+    var raceDateNext: Date
+    if (responseBody != null) {
+        for (i in 0 until (responseBody.data?.raceTable?.racesList?.size?.minus(1) ?: 0)) {
+            val currentRaceListObject = responseBody.data?.raceTable?.racesList?.get(i)
+            val nextRaceListObject = responseBody.data?.raceTable?.racesList?.get(i + 1)
+            raceDatePrevious = utcToCurrentTimeZone(FORMAT_DATE, currentRaceListObject?.date.toString() + "T" +  currentRaceListObject?.time.toString())
+            raceDateNext = utcToCurrentTimeZone(FORMAT_DATE, nextRaceListObject?.date.toString() + "T" +  nextRaceListObject?.time.toString())
+            val cmpPrevious = currentDate.compareTo(raceDatePrevious)
+            val cmpNext = currentDate.compareTo(raceDateNext)
+            if(cmpPrevious > 0 && cmpNext < 0) {
+                return i + 1
+            }
+        }
+    }
+    return -1
+}
+
+fun getCurrentDate(): Date {
+    val sdf = SimpleDateFormat(FORMAT_DATE, Locale.getDefault())
+    val currentDateStr = sdf.format(Date())
+    return sdf.parse(currentDateStr) as Date
 }

@@ -12,8 +12,6 @@ import com.alexandreladriere.f1companion.utils.*
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import org.json.JSONException
-import java.text.SimpleDateFormat
-import java.util.*
 
 
 /**
@@ -54,7 +52,7 @@ internal fun updateAppWidget(
         try {
             // Construct the RemoteViews object
             val views = RemoteViews(context.packageName, R.layout.calendar_medium_widget)
-            updateWidgetCalendarUI(context, views, nextRace)
+            updateWidgetMediumCalendarUI(context, views, nextRace)
             appWidgetManager.updateAppWidget(appWidgetId, views)
         } catch (e: JSONException) {
             e.printStackTrace()
@@ -62,30 +60,7 @@ internal fun updateAppWidget(
     }
 }
 
-fun getNextRaceIndex(responseBody: SeasonRacesResponse?): Int {
-    // not using Instant instant = Instant.now(); because it requires API26 at least
-    val sdf = SimpleDateFormat(FORMAT_DATE, Locale.getDefault())
-    val currentDateStr = sdf.format(Date())
-    val currentDate: Date = sdf.parse(currentDateStr) as Date
-    var raceDatePrevious: Date
-    var raceDateNext: Date
-    if (responseBody != null) {
-        for (i in 0 until (responseBody.data?.raceTable?.racesList?.size?.minus(1) ?: 0)) {
-            val currentRaceListObject = responseBody.data?.raceTable?.racesList?.get(i)
-            val nextRaceListObject = responseBody.data?.raceTable?.racesList?.get(i + 1)
-            raceDatePrevious = utcToCurrentTimeZone(FORMAT_DATE, currentRaceListObject?.date.toString() + "T" +  currentRaceListObject?.time.toString())
-            raceDateNext = utcToCurrentTimeZone(FORMAT_DATE, nextRaceListObject?.date.toString() + "T" +  nextRaceListObject?.time.toString())
-            val cmpPrevious = currentDate.compareTo(raceDatePrevious)
-            val cmpNext = currentDate.compareTo(raceDateNext)
-            if(cmpPrevious > 0 && cmpNext < 0) {
-                return i + 1
-            }
-        }
-    }
-    return -1
-}
-
-fun updateWidgetCalendarUI(context: Context, widgetView: RemoteViews, race: Race?) {
+fun updateWidgetMediumCalendarUI(context: Context, widgetView: RemoteViews, race: Race?) {
     // update title:
     widgetView.setTextViewText(R.id.textview_race_num, "R" + race?.round ?: "null")
     widgetView.setTextViewText(R.id.textview_race_locality, race?.circuit?.location?.locality ?: "null")
