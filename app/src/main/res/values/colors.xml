@@ -16,4 +16,5 @@
     <color name="formula_red_background_light">#2E0500</color>
     <color name="formula_red_background_dark">#290400</color>
     <color name="background_dark">#313131</color>
+    <color name="main_dark">#131313</color>
 </resources>

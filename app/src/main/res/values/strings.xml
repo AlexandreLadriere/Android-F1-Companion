@@ -1,6 +1,8 @@
 <resources>
-    <string name="app_name">F1Companion</string>
+    <string name="app_name">F1 Companion</string>
     <string name="appwidget_text">EXAMPLE</string>
+
+    <!-- Widget Calendar Medium -->
     <string name="appwidget_race_num_ex">R1</string>
     <string name="appwidget_filler">&#160;–&#160;</string>
     <string name="appwidget_race_locality_ex">Sakhir</string>
@@ -31,6 +33,13 @@
     <string name="fp2">FP2</string>
     <string name="fp3">FP3</string>
     <string name="q1">Q1</string>
+
+    <!-- Main activity -->
+    <string name="main_activity_title">Widgets</string>
+    <string name="main_activity_description">Preview list of all available widgets:</string>
+    <string name="main_activity_widget_medium_calendar_title">Calendar Medium Widget</string>
+
+    <string name="action_info">App info</string>
 
     <string name="add_widget">Add widget</string>
     <string name="app_widget_description">This widget displays main info of the next F1 race</string>

@@ -10,6 +10,12 @@ http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
     <dimen name="widget_text_size_1">12sp</dimen>
     <dimen name="widget_text_size_2">8sp</dimen>
     <dimen name="widget_padding_0">8dp</dimen>
+    <dimen name="widget_padding_1">4dp</dimen>
+    <dimen name="widget_padding_2">2dp</dimen>
     <dimen name="widget_margin_0">8dp</dimen>
+    <dimen name="widget_radius">16dp</dimen>
+    <dimen name="activity_main_element_padding">8dp</dimen>
+    <dimen name="space_height">16dp</dimen>
+    <dimen name="activity_main_horizontal_margin">16dp</dimen>
 
 </resources>
