@@ -36,7 +36,7 @@
 
     <!-- Main activity -->
     <string name="main_activity_title">Widgets</string>
-    <string name="main_activity_description">Preview list of all available widgets:</string>
+    <string name="main_activity_description">Preview list of all available widgets</string>
     <string name="main_activity_widget_medium_calendar_title">Calendar Medium Widget</string>
 
     <string name="action_info">App info</string>
