@@ -4,6 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InfoActivity">
+    tools:context=".InfoActivity"
+    android:background="@color/main_dark">
+
+    <ScrollView
+        android:id="@+id/scroll_view_info_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout_inside_scrollview_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="@dimen/activity_main_horizontal_margin">
+
+            <!--
+            <TextView
+                android:id="@+id/textview_info_activity_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/info_activity_title"
+                android:text="@string/info_activity_title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/widget_text_size_0"
+                android:textStyle="bold"
+                android:layout_marginVertical="@dimen/activity_main_element_padding"
+                />
+-->
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

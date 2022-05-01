@@ -43,4 +43,7 @@
 
     <string name="add_widget">Add widget</string>
     <string name="app_widget_description">This widget displays main info of the next F1 race</string>
+
+    <!-- Info Activity -->
+    <string name="info_activity_title">Information</string>
 </resources>
