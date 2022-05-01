@@ -5,9 +5,9 @@
     <!-- Widget Calendar Medium -->
     <string name="appwidget_race_num_ex">R1</string>
     <string name="appwidget_filler">&#160;–&#160;</string>
-    <string name="appwidget_race_locality_ex">Sakhir</string>
-    <string name="appwidget_race_we_date_ex">18–20</string>
-    <string name="appwidget_race_we_month_ex">MAR</string>
+    <string name="appwidget_race_locality_ex">Zandvoort</string>
+    <string name="appwidget_race_we_date_ex">02–04</string>
+    <string name="appwidget_race_we_month_ex">SEPT</string>
 
     <string name="appwidget_race_first_session_ex">FP1</string>
     <string name="appwidget_race_first_session_day_ex">FRI</string>
@@ -19,15 +19,15 @@
 
     <string name="appwidget_race_third_session_ex">FP3</string>
     <string name="appwidget_race_third_session_day_ex">SAT</string>
-    <string name="appwidget_race_third_session_hour_ex">12:00</string>
+    <string name="appwidget_race_third_session_hour_ex">11:00</string>
 
     <string name="appwidget_race_fourth_session_ex">Q1</string>
     <string name="appwidget_race_fourth_session_day_ex">SAT</string>
-    <string name="appwidget_race_fourth_session_hour_ex">15:00</string>
+    <string name="appwidget_race_fourth_session_hour_ex">14:00</string>
 
     <string name="appwidget_race_session_ex">Race</string>
     <string name="appwidget_race_session_day_ex">SUN</string>
-    <string name="appwidget_race_session_hour_ex">15:00</string>
+    <string name="appwidget_race_session_hour_ex">13:00</string>
 
     <string name="fp1">FP1</string>
     <string name="fp2">FP2</string>
