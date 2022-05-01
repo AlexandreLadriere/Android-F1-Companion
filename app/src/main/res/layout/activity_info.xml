@@ -44,12 +44,35 @@
                 />
 
             <TextView
+                android:id="@+id/textview_info_activity_contact_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/textview_info_activity_contact_title"
+                android:text="@string/textview_info_activity_contact_title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/widget_text_size_0"
+                android:textStyle="bold"
+                android:layout_marginVertical="@dimen/activity_main_element_padding"
+                />
+
+            <TextView
+                android:id="@+id/textview_info_activity_contact_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/textview_info_activity_contact_text"
+                android:text="@string/textview_info_activity_contact_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/widget_text_size_1"
+                android:layout_marginVertical="@dimen/activity_main_element_padding"
+                />
+
+            <TextView
                 android:id="@+id/textview_info_activity_app_version"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/info_activity_app_version"
                 android:text="@string/info_activity_app_version"
-                android:textColor="@color/white"
+                android:textColor="@color/light_grey"
                 android:textSize="@dimen/widget_text_size_1"
                 android:layout_marginVertical="@dimen/activity_main_element_padding"
                 />

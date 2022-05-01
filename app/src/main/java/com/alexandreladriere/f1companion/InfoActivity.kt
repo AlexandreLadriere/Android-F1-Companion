@@ -18,7 +18,7 @@ class InfoActivity : AppCompatActivity() {
     }
 
     fun setVersion() {
-        var versionName = "Version "
+        var versionName = "Version: "
         try {
             val packageInfo = packageManager.getPackageInfo(packageName, 0)
             versionName += packageInfo.versionName
