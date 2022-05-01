@@ -43,4 +43,12 @@
 
     <string name="add_widget">Add widget</string>
     <string name="app_widget_description">This widget displays main info of the next F1 race</string>
+
+    <!-- Info Activity -->
+    <string name="info_activity_title">Information</string>
+    <string name="info_activity_about_section_title">About F1 Companion</string>
+    <string name="info_activity_about_section_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget ipsum mattis, posuere dui eget, mattis nulla. Cras sit amet elit ac justo rhoncus tempor. Quisque mattis nulla ante, at vulputate lacus porta non. Nam et risus tincidunt, elementum turpis sit amet, convallis odio. Aliquam tincidunt rhoncus vehicula. Donec libero nunc, aliquet at metus at, volutpat varius turpis. Phasellus enim mauris, ornare sit amet dolor et, scelerisque interdum augue.</string>
+    <string name="info_activity_app_version">App version</string>
+    <string name="textview_info_activity_contact_title">Contact</string>
+    <string name="textview_info_activity_contact_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget ipsum mattis, posuere dui eget, mattis nulla. Cras sit amet elit ac justo rhoncus tempor. Quisque mattis nulla ante, at vulputate lacus porta non. Nam et risus tincidunt, elementum turpis sit amet, convallis odio. Aliquam tincidunt rhoncus vehicula. Donec libero nunc, aliquet at metus at, volutpat varius turpis. Phasellus enim mauris, ornare sit amet dolor et, scelerisque interdum augue.</string>
 </resources>

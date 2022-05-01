@@ -1,5 +1,6 @@
 package com.alexandreladriere.f1companion
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
@@ -26,6 +27,8 @@ class MainActivity : AppCompatActivity() {
         val id: Int = item.getItemId()
         if (id == R.id.action_info) {
             Log.d("INFO ICON: ", "CLICKED")
+            val intent = Intent(this, InfoActivity::class.java)
+            this.startActivity(intent)
             return true
         }
         else {

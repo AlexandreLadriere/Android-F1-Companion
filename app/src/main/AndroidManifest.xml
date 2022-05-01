@@ -14,7 +14,14 @@
         android:usesCleartextTraffic="true">
         <activity
             android:name=".InfoActivity"
-            android:exported="false" />
+            android:label="@string/info_activity_title"
+            android:exported="false"
+            android:parentActivityName="com.alexandreladriere.f1companion.MainActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.alexandreladriere.f1companion.MainActivity" />
+        </activity>
 
         <receiver
             android:name=".CalendarMediumWidget"
