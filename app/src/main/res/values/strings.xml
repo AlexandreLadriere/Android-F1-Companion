@@ -3,7 +3,7 @@
     <string name="appwidget_text">EXAMPLE</string>
 
     <!-- Widget Calendar Medium -->
-    <string name="appwidget_race_num_ex">R1</string>
+    <string name="appwidget_race_num_ex">R15</string>
     <string name="appwidget_filler">&#160;–&#160;</string>
     <string name="appwidget_race_locality_ex">Zandvoort</string>
     <string name="appwidget_race_we_date_ex">02–04</string>
