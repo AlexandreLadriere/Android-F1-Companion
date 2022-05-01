@@ -19,19 +19,40 @@
             android:orientation="vertical"
             android:layout_marginHorizontal="@dimen/activity_main_horizontal_margin">
 
-            <!--
+
             <TextView
-                android:id="@+id/textview_info_activity_title"
+                android:id="@+id/textview_info_activity_about_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:contentDescription="@string/info_activity_title"
-                android:text="@string/info_activity_title"
+                android:contentDescription="@string/info_activity_about_section_title"
+                android:text="@string/info_activity_about_section_title"
                 android:textColor="@color/white"
                 android:textSize="@dimen/widget_text_size_0"
                 android:textStyle="bold"
                 android:layout_marginVertical="@dimen/activity_main_element_padding"
                 />
--->
+
+            <TextView
+                android:id="@+id/textview_info_activity_about_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/info_activity_about_section_text"
+                android:text="@string/info_activity_about_section_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/widget_text_size_1"
+                android:layout_marginVertical="@dimen/activity_main_element_padding"
+                />
+
+            <TextView
+                android:id="@+id/textview_info_activity_app_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/info_activity_app_version"
+                android:text="@string/info_activity_app_version"
+                android:textColor="@color/white"
+                android:textSize="@dimen/widget_text_size_1"
+                android:layout_marginVertical="@dimen/activity_main_element_padding"
+                />
 
         </LinearLayout>
 
