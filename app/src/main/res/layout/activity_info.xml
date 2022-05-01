@@ -40,6 +40,8 @@
                 android:textColor="@color/white"
                 android:textSize="@dimen/widget_text_size_1"
                 android:layout_marginVertical="@dimen/activity_main_element_padding"
+                android:autoLink="all"
+                android:textColorLink="@color/formula_red"
                 />
 
             <TextView
