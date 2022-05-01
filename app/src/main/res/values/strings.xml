@@ -36,8 +36,15 @@
 
     <!-- Main activity -->
     <string name="main_activity_title">Widgets</string>
-    <string name="main_activity_description">Preview list of all available widgets</string>
+    <string name="main_activity_description">Preview list of all available widgets:</string>
     <string name="main_activity_widget_medium_calendar_title">Calendar Medium Widget</string>
+
+    <string name="main_activity_how_to_install_title">How To:</string>
+    <string name="main_activity_how_to_install_step_1"><b>1-</b>  On your Home screen, touch and hold an empty space</string>
+    <string name="main_activity_how_to_install_step_2"><b>2-</b>  Select the widget option</string>
+    <string name="main_activity_how_to_install_step_3"><b>3-</b>  Touch and hold a widget. You’ll get images of your Home screens</string>
+    <string name="main_activity_how_to_install_step_4"><b>4-</b>  Slide the widget to where you want it. Lift your finger</string>
+    <string name="main_activity_how_to_install_step_5"><b>5-</b>  Enjoy !</string>
 
     <string name="action_info">App info</string>
 

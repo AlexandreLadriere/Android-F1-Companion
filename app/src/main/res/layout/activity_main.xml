@@ -19,6 +19,89 @@
             android:layout_marginHorizontal="@dimen/activity_main_horizontal_margin">
 
             <TextView
+                android:id="@+id/textview_main_activity_how_to_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/main_activity_how_to_install_title"
+                android:text="@string/main_activity_how_to_install_title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/widget_text_size_0"
+                android:textStyle="bold"
+                android:layout_marginVertical="@dimen/activity_main_element_padding"
+                />
+
+            <LinearLayout
+                android:id="@+id/layout_step_how_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textview_main_activity_how_to_step_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/main_activity_how_to_install_step_1"
+                    android:text="@string/main_activity_how_to_install_step_1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:lineSpacingExtra="@dimen/activity_main_how_to_steps_spacing"
+                    android:layout_marginVertical="@dimen/activity_main_how_to_steps_spacing"
+                    />
+
+                <TextView
+                    android:id="@+id/textview_main_activity_how_to_step_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/main_activity_how_to_install_step_2"
+                    android:text="@string/main_activity_how_to_install_step_2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:lineSpacingExtra="@dimen/activity_main_how_to_steps_spacing"
+                    android:layout_marginVertical="@dimen/activity_main_how_to_steps_spacing"
+                    />
+
+                <TextView
+                    android:id="@+id/textview_main_activity_how_to_step_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/main_activity_how_to_install_step_3"
+                    android:text="@string/main_activity_how_to_install_step_3"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:lineSpacingExtra="@dimen/activity_main_how_to_steps_spacing"
+                    android:layout_marginVertical="@dimen/activity_main_how_to_steps_spacing"
+                    />
+
+                <TextView
+                    android:id="@+id/textview_main_activity_how_to_step_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/main_activity_how_to_install_step_4"
+                    android:text="@string/main_activity_how_to_install_step_4"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:lineSpacingExtra="@dimen/activity_main_how_to_steps_spacing"
+                    android:layout_marginVertical="@dimen/activity_main_how_to_steps_spacing"
+                    />
+
+                <TextView
+                    android:id="@+id/textview_main_activity_how_to_step_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/main_activity_how_to_install_step_5"
+                    android:text="@string/main_activity_how_to_install_step_5"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:lineSpacingExtra="@dimen/activity_main_how_to_steps_spacing"
+                    android:layout_marginVertical="@dimen/activity_main_how_to_steps_spacing"
+                    />
+
+            </LinearLayout>
+
+            <include layout="@layout/space"/>
+            <include layout="@layout/space"/>
+
+            <TextView
                 android:id="@+id/textview_main_activity_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
