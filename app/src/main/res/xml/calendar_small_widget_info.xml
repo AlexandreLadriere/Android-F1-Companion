@@ -5,7 +5,7 @@
     android:initialLayout="@layout/calendar_small_widget"
     android:minWidth="110dp"
     android:minHeight="80dp"
-    android:previewImage="@drawable/example_appwidget_preview"
+    android:previewImage="@drawable/widget_small_calendar_preview"
 
     android:previewLayout="@layout/calendar_small_widget"
     android:targetCellWidth="2"
