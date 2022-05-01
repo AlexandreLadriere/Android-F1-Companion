@@ -8,6 +8,7 @@
     <string name="appwidget_race_locality_ex">Zandvoort</string>
     <string name="appwidget_race_we_date_ex">02–04</string>
     <string name="appwidget_race_we_month_ex">SEPT</string>
+    <string name="appwidget_race_we_month_ex_bis">&#160;SEPT</string>
 
     <string name="appwidget_race_first_session_ex">FP1</string>
     <string name="appwidget_race_first_session_day_ex">FRI</string>
@@ -34,10 +35,18 @@
     <string name="fp3">FP3</string>
     <string name="q1">Q1</string>
 
+    <!-- Widget Calendar Medium -->
+    <string name="appwidget_lights_out">Lights out in</string>
+    <string name="appwidget_days_remaining">5 days, 14hr</string>
+    <string name="appwidget_gp_name">Dutch Grand Prix</string>
+    <string name="appwidget_circuit_name">Circuit Park Zandvoort</string>
+
+
     <!-- Main activity -->
     <string name="main_activity_title">Widgets</string>
     <string name="main_activity_description">Preview list of all available widgets:</string>
     <string name="main_activity_widget_medium_calendar_title">Calendar Medium Widget</string>
+    <string name="main_activity_widget_small_calendar_title">Calendar Small Widget</string>
 
     <string name="main_activity_how_to_install_title">How To:</string>
     <string name="main_activity_how_to_install_step_1"><b>1-</b>  On your Home screen, touch and hold an empty space</string>

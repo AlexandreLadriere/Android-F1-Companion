@@ -12,11 +12,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.F1Companion"
         android:usesCleartextTraffic="true">
+        <receiver
+            android:name=".CalendarSmallWidget"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/calendar_small_widget_info" />
+        </receiver>
+
         <activity
             android:name=".InfoActivity"
-            android:label="@string/info_activity_title"
             android:exported="false"
-            android:parentActivityName="com.alexandreladriere.f1companion.MainActivity" >
+            android:label="@string/info_activity_title"
+            android:parentActivityName=".MainActivity">
+
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
