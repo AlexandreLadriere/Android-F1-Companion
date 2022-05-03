@@ -37,7 +37,7 @@
 
     <!-- Widget Calendar Medium -->
     <string name="appwidget_lights_out">Lights out in</string>
-    <string name="appwidget_days_remaining">5 days, 14hr</string>
+    <string name="appwidget_days_remaining">5 days, 14 hrs</string>
     <string name="appwidget_gp_name">Dutch Grand Prix</string>
     <string name="appwidget_circuit_name">Circuit Park Zandvoort</string>
 

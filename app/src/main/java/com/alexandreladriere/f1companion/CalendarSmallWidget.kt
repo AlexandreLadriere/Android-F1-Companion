@@ -75,7 +75,12 @@ fun updateWidgetSmallCalendarUI(context: Context, widgetView: RemoteViews, race:
     val hours = minutes / 60
     val remainingHours = hours % 24
     val days = hours / 24
-    widgetView.setTextViewText(R.id.textview_small_days_remaining, days.toString() + " days, " + remainingHours.toString() + "hr" ?: "null")
+    // for hour(s) abbreviation, see: https://english.stackexchange.com/questions/380296/hour-abbreviation-h-or-h
+    val hourAbr = if (remainingHours >= 2) " hrs" else " hr"
+    val dayAbr = if (days >= 2) " days" else " day"
+
+    widgetView.setTextViewText(R.id.textview_small_days_remaining, "$days $dayAbr, $remainingHours$hourAbr"
+        ?: "null")
     // Update place
     widgetView.setTextViewText(R.id.textview_small_gp, race?.circuit?.location?.country ?: "null")
     widgetView.setTextViewText(R.id.textview_small_circuit_name, race?.circuit?.circuitName ?: "null")
