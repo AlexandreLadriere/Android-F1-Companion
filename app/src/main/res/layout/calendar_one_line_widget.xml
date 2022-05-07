@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.F1Companion.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.F1Companion.AppWidgetContainer"
+    android:id="@+id/layout_one_line_calendar_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/layout_one_line_calendar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:id="@+id/layout_one_line_calendar_weekend_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|start"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/textview_one_line_calendar_race_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/appwidget_race_num_ex"
+                android:gravity="center"
+                android:text="@string/appwidget_race_num_ex"
+                android:textSize="@dimen/widget_text_size_1"
+                android:textStyle="bold"
+                android:textColor="@color/formula_red"/>
+
+            <TextView
+                android:id="@+id/textview_one_line_calendar_race_locality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/appwidget_race_locality_ex"
+                android:gravity="center"
+                android:text="@string/appwidget_race_locality_ex"
+                android:textSize="@dimen/widget_text_size_1"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_one_line_calendar_weekend_flag"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageview_one_line_calendar_flag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="TODO"
+                android:focusable="false"
+                android:src="@drawable/zandvoort_layout" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_one_line_calendar_weekend_title_t"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|end"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/textview_one_line_calendar_race_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/appwidget_race_full_date"
+                android:text="@string/appwidget_race_full_date"
+                android:textSize="@dimen/widget_text_size_1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/formula_red"/>
+
+            <TextView
+                android:id="@+id/textview_one_line_calendar_race_hour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:contentDescription="@string/appwidget_race_session_hour_ex"
+                android:text="@string/appwidget_race_session_hour_ex"
+                android:textSize="@dimen/widget_text_size_1"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

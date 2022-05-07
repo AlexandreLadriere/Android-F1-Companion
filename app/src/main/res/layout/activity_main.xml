@@ -168,48 +168,26 @@
             <include layout="@layout/space"/>
 
             <TextView
+                android:id="@+id/textview_widget_one_line_calendar_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:contentDescription="@string/main_activity_widget_medium_calendar_title"
-                android:text="@string/main_activity_widget_medium_calendar_title"
+                android:contentDescription="@string/main_activity_widget_one_line_calendar_title"
+                android:text="@string/main_activity_widget_one_line_calendar_title"
                 android:textColor="@color/formula_red"
                 android:textSize="@dimen/widget_text_size_0"
                 android:textStyle="bold"
                 />
 
             <LinearLayout
+                android:id="@+id/layout_widget_one_line_calendar"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="75dp"
                 android:orientation="vertical"
                 android:background="@drawable/rounded_rectangle_border"
                 android:padding="@dimen/widget_padding_2"
                 android:layout_marginVertical="@dimen/activity_main_element_padding">
 
-                <include layout="@layout/calendar_medium_widget"/>
-
-            </LinearLayout>
-
-            <include layout="@layout/space"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/main_activity_widget_medium_calendar_title"
-                android:text="@string/main_activity_widget_medium_calendar_title"
-                android:textColor="@color/formula_red"
-                android:textSize="@dimen/widget_text_size_0"
-                android:textStyle="bold"
-                />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:background="@drawable/rounded_rectangle_border"
-                android:padding="@dimen/widget_padding_2"
-                android:layout_marginVertical="@dimen/activity_main_element_padding">
-
-                <include layout="@layout/calendar_medium_widget"/>
+                <include layout="@layout/calendar_one_line_widget"/>
 
             </LinearLayout>
 

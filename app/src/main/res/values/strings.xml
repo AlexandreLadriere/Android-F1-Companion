@@ -41,12 +41,16 @@
     <string name="appwidget_gp_name">Dutch Grand Prix</string>
     <string name="appwidget_circuit_name">Circuit Park Zandvoort</string>
 
+    <!-- Widget Calendar Medium -->
+    <string name="appwidget_race_full_date">2022-05-08</string>
+
 
     <!-- Main activity -->
     <string name="main_activity_title">Widgets</string>
     <string name="main_activity_description">Preview list of all available widgets:</string>
     <string name="main_activity_widget_medium_calendar_title">Calendar Medium Widget</string>
     <string name="main_activity_widget_small_calendar_title">Calendar Small Widget</string>
+    <string name="main_activity_widget_one_line_calendar_title">Calendar one Line Widget</string>
 
     <string name="main_activity_how_to_install_title">How To:</string>
     <string name="main_activity_how_to_install_step_1"><b>1-</b>  On your Home screen, touch and hold an empty space</string>
