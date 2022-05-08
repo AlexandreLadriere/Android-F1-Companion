@@ -7,7 +7,7 @@ import android.content.res.Resources
 import android.widget.RemoteViews
 import com.alexandreladriere.f1companion.api.ErgastApi
 import com.alexandreladriere.f1companion.api.RetrofitHelper
-import com.alexandreladriere.f1companion.datamodel.Race
+import com.alexandreladriere.f1companion.datamodel.season.races.Race
 import com.alexandreladriere.f1companion.utils.*
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch

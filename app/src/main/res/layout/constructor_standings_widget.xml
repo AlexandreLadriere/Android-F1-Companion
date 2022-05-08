@@ -1,0 +1,484 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.F1Companion.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.F1Companion.AppWidgetContainer"
+    android:gravity="center"
+    android:id="@+id/layout_constructor_standings_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_constructor_standings_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:id="@+id/layout_constructor_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textview_constructor_1_pos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_constructor_standings_first_ex"
+                    android:text="@string/appwidget_constructor_standings_first_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="@dimen/activity_main_horizontal_margin"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_constructor_1_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_ferrari"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textview_constructor_1_team"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/appwidget_constructor_standings_first_team_ex"
+                        android:text="@string/appwidget_constructor_standings_first_team_ex"
+                        android:textSize="@dimen/widget_text_size_1"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textview_constructor_1_points"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/appwidget_constructor_standings_first_points_ex"
+                        android:gravity="end"
+                        android:text="@string/appwidget_constructor_standings_first_points_ex"
+                        android:textSize="@dimen/widget_text_size_1"
+                        android:textStyle="bold" />
+                </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_constructor_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textview_constructor_2_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/appwidget_constructor_standings_second_ex"
+                android:text="@string/appwidget_constructor_standings_second_ex"
+                android:textSize="@dimen/widget_text_size_1"
+                android:textStyle="bold"
+                android:layout_marginEnd="@dimen/activity_main_horizontal_margin"/>
+
+            <LinearLayout
+                android:id="@+id/layout_constructor_2_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_red_bull"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_constructor_2_team"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_constructor_standings_second_team_ex"
+                    android:text="@string/appwidget_constructor_standings_second_team_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textview_constructor_2_points"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_constructor_standings_second_points_ex"
+                    android:gravity="end"
+                    android:text="@string/appwidget_constructor_standings_second_points_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_constructor_3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textview_constructor_3_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/appwidget_constructor_standings_third_ex"
+                android:text="@string/appwidget_constructor_standings_third_ex"
+                android:textSize="@dimen/widget_text_size_1"
+                android:textStyle="bold"
+                android:layout_marginEnd="@dimen/activity_main_horizontal_margin"/>
+
+            <LinearLayout
+                android:id="@+id/layout_constructor_3_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_mercedes"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_constructor_3_team"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_constructor_standings_third_team_ex"
+                    android:text="@string/appwidget_constructor_standings_third_team_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textview_constructor_3_points"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_constructor_standings_third_points_ex"
+                    android:gravity="end"
+                    android:text="@string/appwidget_constructor_standings_third_points_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_constructor_4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textview_constructor_4_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/appwidget_constructor_standings_fourth_ex"
+                android:text="@string/appwidget_constructor_standings_fourth_ex"
+                android:textSize="@dimen/widget_text_size_1"
+                android:textStyle="bold"
+                android:layout_marginEnd="@dimen/activity_main_horizontal_margin"/>
+
+            <LinearLayout
+                android:id="@+id/layout_constructor_4_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_mclaren"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_constructor_4_team"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_constructor_standings_fourth_team_ex"
+                    android:text="@string/appwidget_constructor_standings_fourth_team_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textview_constructor_4_points"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_constructor_standings_fourth_points_ex"
+                    android:gravity="end"
+                    android:text="@string/appwidget_constructor_standings_fourth_points_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_constructor_5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textview_constructor_5_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/appwidget_constructor_standings_fifth_ex"
+                android:text="@string/appwidget_constructor_standings_fifth_ex"
+                android:textSize="@dimen/widget_text_size_1"
+                android:textStyle="bold"
+                android:layout_marginEnd="@dimen/activity_main_horizontal_margin"/>
+
+            <LinearLayout
+                android:id="@+id/layout_constructor_5_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_alfa"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_constructor_5_team"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_constructor_standings_fifth_team_ex"
+                    android:text="@string/appwidget_constructor_standings_fifth_team_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textview_constructor_5_points"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_constructor_standings_fifth_points_ex"
+                    android:gravity="end"
+                    android:text="@string/appwidget_constructor_standings_fifth_points_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_constructor_6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textview_constructor_6_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/appwidget_constructor_standings_sixth_ex"
+                android:text="@string/appwidget_constructor_standings_sixth_ex"
+                android:textSize="@dimen/widget_text_size_1"
+                android:textStyle="bold"
+                android:layout_marginEnd="@dimen/activity_main_horizontal_margin"/>
+
+            <LinearLayout
+                android:id="@+id/layout_constructor_6_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_alpine"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_constructor_6_team"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_constructor_standings_sixth_team_ex"
+                    android:text="@string/appwidget_constructor_standings_sixth_team_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textview_constructor_6_points"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_constructor_standings_sixth_points_ex"
+                    android:gravity="end"
+                    android:text="@string/appwidget_constructor_standings_sixth_points_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_constructor_7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textview_constructor_7_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/appwidget_constructor_standings_seventh_ex"
+                android:text="@string/appwidget_constructor_standings_seventh_ex"
+                android:textSize="@dimen/widget_text_size_1"
+                android:textStyle="bold"
+                android:layout_marginEnd="@dimen/activity_main_horizontal_margin"/>
+
+            <LinearLayout
+                android:id="@+id/layout_constructor_7_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_alphatauri"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_constructor_7_team"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_constructor_standings_seventh_team_ex"
+                    android:text="@string/appwidget_constructor_standings_seventh_team_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textview_constructor_7_points"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_constructor_standings_seventh_points_ex"
+                    android:gravity="end"
+                    android:text="@string/appwidget_constructor_standings_seventh_points_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_constructor_8"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textview_constructor_8_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/appwidget_constructor_standings_eighth_ex"
+                android:text="@string/appwidget_constructor_standings_eighth_ex"
+                android:textSize="@dimen/widget_text_size_1"
+                android:textStyle="bold"
+                android:layout_marginEnd="@dimen/activity_main_horizontal_margin"/>
+
+            <LinearLayout
+                android:id="@+id/layout_constructor_8_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_haas"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_constructor_8_team"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_constructor_standings_eighth_team_ex"
+                    android:text="@string/appwidget_constructor_standings_eighth_team_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_dark"/>
+
+                <TextView
+                    android:id="@+id/textview_constructor_8_points"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_constructor_standings_eighth_points_ex"
+                    android:gravity="end"
+                    android:text="@string/appwidget_constructor_standings_eighth_points_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_dark"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_constructor_9"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textview_constructor_9_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/appwidget_constructor_standings_ninth_ex"
+                android:text="@string/appwidget_constructor_standings_ninth_ex"
+                android:textSize="@dimen/widget_text_size_1"
+                android:textStyle="bold"
+                android:layout_marginEnd="@dimen/activity_main_horizontal_margin"/>
+
+            <LinearLayout
+                android:id="@+id/layout_constructor_9_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_aston_martin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_constructor_9_team"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_constructor_standings_ninth_team_ex"
+                    android:text="@string/appwidget_constructor_standings_ninth_team_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textview_constructor_9_points"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_constructor_standings_ninth_points_ex"
+                    android:gravity="end"
+                    android:text="@string/appwidget_constructor_standings_ninth_points_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_constructor_10"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textview_constructor_10_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/appwidget_constructor_standings_tenth_ex"
+                android:text="@string/appwidget_constructor_standings_tenth_ex"
+                android:textSize="@dimen/widget_text_size_1"
+                android:textStyle="bold"
+                android:layout_marginEnd="@dimen/activity_main_element_padding"/>
+
+            <LinearLayout
+                android:id="@+id/layout_constructor_10_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_williams"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_constructor_10_team"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_constructor_standings_tenth_team_ex"
+                    android:text="@string/appwidget_constructor_standings_tenth_team_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textview_constructor_10_points"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_constructor_standings_tenth_points_ex"
+                    android:gravity="end"
+                    android:text="@string/appwidget_constructor_standings_tenth_points_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

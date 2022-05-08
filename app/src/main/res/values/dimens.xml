@@ -20,4 +20,11 @@ http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
     <dimen name="space_height">16dp</dimen>
     <dimen name="activity_main_horizontal_margin">16dp</dimen>
 
+    <!-- Constructors Background -->
+    <dimen name="constructor_background_corner_radius">8dp</dimen>
+    <dimen name="constructor_background_padding_top">2dp</dimen>
+    <dimen name="constructor_background_padding_bottom">2dp</dimen>
+    <dimen name="constructor_background_padding_start">4dp</dimen>
+    <dimen name="constructor_background_padding_end">4dp</dimen>
+
 </resources>

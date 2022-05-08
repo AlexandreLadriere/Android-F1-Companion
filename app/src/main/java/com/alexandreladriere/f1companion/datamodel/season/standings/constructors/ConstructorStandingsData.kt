@@ -1,8 +1,8 @@
-package com.alexandreladriere.f1companion.datamodel
+package com.alexandreladriere.f1companion.datamodel.season.standings.constructors
 
 import com.google.gson.annotations.SerializedName
 
-data class SeasonRacesData (
+data class ConstructorStandingsData(
     @SerializedName("xmlns")
     val xmlns: String? = null,
 
@@ -21,6 +21,6 @@ data class SeasonRacesData (
     @SerializedName("total")
     val total: String? = null,
 
-    @SerializedName("RaceTable")
-    val raceTable: RaceTable? = null
+    @SerializedName("StandingsTable")
+    val standingsTable: StandingsTable? = null
 )

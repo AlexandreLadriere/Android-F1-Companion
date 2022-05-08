@@ -51,6 +51,7 @@
     <string name="main_activity_widget_medium_calendar_title">Calendar Medium Widget</string>
     <string name="main_activity_widget_small_calendar_title">Calendar Small Widget</string>
     <string name="main_activity_widget_one_line_calendar_title">Calendar one Line Widget</string>
+    <string name="main_activity_widget_constructor_standings_title">Constructor Standings Widget</string>
 
     <string name="main_activity_how_to_install_title">How To:</string>
     <string name="main_activity_how_to_install_step_1"><b>1-</b>  On your Home screen, touch and hold an empty space</string>
@@ -63,6 +64,7 @@
 
     <string name="add_widget">Add widget</string>
     <string name="app_widget_description">This widget displays main info of the next F1 race</string>
+    <string name="app_widget_constructor_standings_description">This widget displays the constructor standings of the current season</string>
 
     <!-- Info Activity -->
     <string name="info_activity_title">Information</string>
@@ -71,4 +73,46 @@
     <string name="info_activity_app_version">App version</string>
     <string name="textview_info_activity_contact_title">Contact</string>
     <string name="textview_info_activity_contact_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget ipsum mattis, posuere dui eget, mattis nulla. Cras sit amet elit ac justo rhoncus tempor. Quisque mattis nulla ante, at vulputate lacus porta non. Nam et risus tincidunt, elementum turpis sit amet, convallis odio. Aliquam tincidunt rhoncus vehicula. Donec libero nunc, aliquet at metus at, volutpat varius turpis. Phasellus enim mauris, ornare sit amet dolor et, scelerisque interdum augue.</string>
+
+
+    <!-- Constructor Standings -->
+    <string name="appwidget_constructor_standings_first_ex">1</string>
+    <string name="appwidget_constructor_standings_first_team_ex">Ferrari</string>
+    <string name="appwidget_constructor_standings_first_points_ex">124 PTS</string>
+
+    <string name="appwidget_constructor_standings_second_ex">2</string>
+    <string name="appwidget_constructor_standings_second_team_ex">Red Bull</string>
+    <string name="appwidget_constructor_standings_second_points_ex">113 PTS</string>
+
+    <string name="appwidget_constructor_standings_third_ex">3</string>
+    <string name="appwidget_constructor_standings_third_team_ex">Mercedes</string>
+    <string name="appwidget_constructor_standings_third_points_ex">77 PTS</string>
+
+    <string name="appwidget_constructor_standings_fourth_ex">4</string>
+    <string name="appwidget_constructor_standings_fourth_team_ex">McLaren</string>
+    <string name="appwidget_constructor_standings_fourth_points_ex">46 PTS</string>
+
+    <string name="appwidget_constructor_standings_fifth_ex">5</string>
+    <string name="appwidget_constructor_standings_fifth_team_ex">Alfa Romeo</string>
+    <string name="appwidget_constructor_standings_fifth_points_ex">25 PTS</string>
+
+    <string name="appwidget_constructor_standings_sixth_ex">6</string>
+    <string name="appwidget_constructor_standings_sixth_team_ex">Alpine F1 Team</string>
+    <string name="appwidget_constructor_standings_sixth_points_ex">22 PTS</string>
+
+    <string name="appwidget_constructor_standings_seventh_ex">7</string>
+    <string name="appwidget_constructor_standings_seventh_team_ex">AlphaTauri</string>
+    <string name="appwidget_constructor_standings_seventh_points_ex">16 PTS</string>
+
+    <string name="appwidget_constructor_standings_eighth_ex">8</string>
+    <string name="appwidget_constructor_standings_eighth_team_ex">Haas F1 Team</string>
+    <string name="appwidget_constructor_standings_eighth_points_ex">15 PTS</string>
+
+    <string name="appwidget_constructor_standings_ninth_ex">9</string>
+    <string name="appwidget_constructor_standings_ninth_team_ex">Aston Martin</string>
+    <string name="appwidget_constructor_standings_ninth_points_ex">5 PTS</string>
+
+    <string name="appwidget_constructor_standings_tenth_ex">10</string>
+    <string name="appwidget_constructor_standings_tenth_team_ex">Williams</string>
+    <string name="appwidget_constructor_standings_tenth_points_ex">1 PTS</string>
 </resources>
