@@ -1,6 +1,6 @@
 package com.alexandreladriere.f1companion.utils
 
-import com.alexandreladriere.f1companion.datamodel.SeasonRacesResponse
+import com.alexandreladriere.f1companion.datamodel.season.races.SeasonRacesResponse
 import java.text.SimpleDateFormat
 import java.util.*
 

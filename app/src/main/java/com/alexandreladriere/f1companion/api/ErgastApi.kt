@@ -1,6 +1,6 @@
 package com.alexandreladriere.f1companion.api
 
-import com.alexandreladriere.f1companion.datamodel.SeasonRacesResponse
+import com.alexandreladriere.f1companion.datamodel.season.races.SeasonRacesResponse
 import retrofit2.Response
 import retrofit2.http.GET
 
