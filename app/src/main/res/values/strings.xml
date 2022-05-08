@@ -65,6 +65,7 @@
     <string name="add_widget">Add widget</string>
     <string name="app_widget_description">This widget displays main info of the next F1 race</string>
     <string name="app_widget_constructor_standings_description">This widget displays the constructor standings of the current season</string>
+    <string name="app_widget_driver_standings_description">This widget displays the top 10 driver standings of the current season</string>
 
     <!-- Info Activity -->
     <string name="info_activity_title">Information</string>
