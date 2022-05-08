@@ -10,5 +10,5 @@ data class StandingsList(
     val round: String? = null,
 
     @SerializedName("ConstructorStandings")
-    val racesList: List<Standings>? = null,
+    val constructorStandings: List<Standings>? = null,
 )

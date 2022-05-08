@@ -22,5 +22,5 @@ data class ConstructorStandingsData(
     val total: String? = null,
 
     @SerializedName("StandingsTable")
-    val raceTable: StandingsList? = null
+    val standingsTable: StandingsTable? = null
 )

@@ -7,5 +7,5 @@ data class StandingsTable(
     val season: String? = null,
 
     @SerializedName("StandingsLists")
-    val racesList: StandingsList? = null,
+    val standingsList: List<StandingsList>? = null,
 )
