@@ -91,7 +91,7 @@ fun updateConstructorStanding(context: Context, widgetView: RemoteViews, standin
     )
     widgetView.setTextViewText(idLayoutConstructorTeam, standing?.constructor?.name ?: "null")
     widgetView.setTextColor(idLayoutConstructorTeam, textColor)
-    widgetView.setTextViewText(idLayoutConstructorPoints, standing?.points ?: "null")
+    widgetView.setTextViewText(idLayoutConstructorPoints, standing?.points + " PTS" ?: "null")
     widgetView.setTextColor(idLayoutConstructorPoints, textColor)
     val resources: Resources = context.resources
     val teamBackground = resources.getIdentifier("background_" + standing?.constructor?.constructorId.toString().replace(" ", "_").lowercase(), "drawable",
