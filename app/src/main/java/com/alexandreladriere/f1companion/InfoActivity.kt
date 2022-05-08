@@ -8,7 +8,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.alexandreladriere.f1companion.utils.TWITTER_PROFILNAME
+import com.alexandreladriere.f1companion.utils.TWITTER_PROFILE_NAME
 import com.alexandreladriere.f1companion.utils.TWITTER_USERID
 
 
