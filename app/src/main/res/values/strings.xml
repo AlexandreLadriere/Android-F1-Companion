@@ -48,9 +48,9 @@
     <!-- Main activity -->
     <string name="main_activity_title">Widgets</string>
     <string name="main_activity_description">Preview list of all available widgets:</string>
-    <string name="main_activity_widget_medium_calendar_title">Calendar Medium Widget</string>
-    <string name="main_activity_widget_small_calendar_title">Calendar Small Widget</string>
-    <string name="main_activity_widget_one_line_calendar_title">Calendar one Line Widget</string>
+    <string name="main_activity_widget_medium_calendar_title">Medium Calendar Widget</string>
+    <string name="main_activity_widget_small_calendar_title">Small Calendar Widget</string>
+    <string name="main_activity_widget_one_line_calendar_title">One Line Calendar Widget</string>
     <string name="main_activity_widget_constructor_standings_title">Constructor Standings Widget</string>
     <string name="main_activity_widget_driver_standings_title">Top 10 Driver Standings Widget</string>
 
