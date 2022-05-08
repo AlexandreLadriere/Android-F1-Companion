@@ -95,7 +95,7 @@ fun updateDriverStanding(context: Context, widgetView: RemoteViews, standing: Dr
     )
     widgetView.setTextViewText(idLayoutDriverFirstName, standing?.driver?.givenName + " " ?: "null")
     widgetView.setTextColor(idLayoutDriverFirstName, textColor)
-    widgetView.setTextViewText(idLayoutDriverLastName, standing?.driver?.familyName ?: "null")
+    widgetView.setTextViewText(idLayoutDriverLastName, standing?.driver?.familyName?.uppercase() ?: "null")
     widgetView.setTextColor(idLayoutDriverLastName, textColor)
     widgetView.setTextViewText(idLayoutDriverPoints, standing?.points + " PTS" ?: "null")
     widgetView.setTextColor(idLayoutDriverPoints, textColor)
