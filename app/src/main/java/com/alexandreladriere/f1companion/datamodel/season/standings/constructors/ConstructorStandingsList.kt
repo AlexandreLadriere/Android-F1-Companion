@@ -2,7 +2,7 @@ package com.alexandreladriere.f1companion.datamodel.season.standings.constructor
 
 import com.google.gson.annotations.SerializedName
 
-data class StandingsList(
+data class ConstructorStandingsList(
     @SerializedName("season")
     val season: String? = null,
 
@@ -10,5 +10,5 @@ data class StandingsList(
     val round: String? = null,
 
     @SerializedName("ConstructorStandings")
-    val constructorStandings: List<Standings>? = null,
+    val constructorStandings: List<ConstructorStandings>? = null,
 )

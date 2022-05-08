@@ -2,10 +2,10 @@ package com.alexandreladriere.f1companion.datamodel.season.standings.constructor
 
 import com.google.gson.annotations.SerializedName
 
-data class StandingsTable(
+data class ConstructorStandingsTable(
     @SerializedName("season")
     val season: String? = null,
 
     @SerializedName("StandingsLists")
-    val standingsList: List<StandingsList>? = null,
+    val constructorStandingsList: List<ConstructorStandingsList>? = null,
 )

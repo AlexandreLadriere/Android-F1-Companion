@@ -2,7 +2,7 @@ package com.alexandreladriere.f1companion.datamodel.season.standings.constructor
 
 import com.google.gson.annotations.SerializedName
 
-data class Standings(
+data class ConstructorStandings(
     @SerializedName("position")
     val position: String? = null,
 

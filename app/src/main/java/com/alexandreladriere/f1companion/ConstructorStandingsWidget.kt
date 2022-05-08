@@ -8,7 +8,7 @@ import android.widget.RemoteViews
 import androidx.core.content.res.ResourcesCompat
 import com.alexandreladriere.f1companion.api.ErgastApi
 import com.alexandreladriere.f1companion.api.RetrofitHelper
-import com.alexandreladriere.f1companion.datamodel.season.standings.constructors.Standings
+import com.alexandreladriere.f1companion.datamodel.season.standings.constructors.ConstructorStandings
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import org.json.JSONException
@@ -47,7 +47,7 @@ internal fun updateConstructorStandingsWidget(
     // launching a new coroutine
     GlobalScope.launch {
         val result = ergastApi.getSeasonConstructorStandings()
-        val constructorStandings = result.body()?.data?.standingsTable?.standingsList?.get(0)?.constructorStandings
+        val constructorStandings = result.body()?.data?.constructorStandingsTable?.constructorStandingsList?.get(0)?.constructorStandings
         try {
             // Construct the RemoteViews object
             val views = RemoteViews(context.packageName, R.layout.constructor_standings_widget)
@@ -59,7 +59,7 @@ internal fun updateConstructorStandingsWidget(
     }
 }
 
-fun updateWidgetConstructorStandingsUI(context: Context, widgetView: RemoteViews, constructorStandingsList: List<Standings>?) {
+fun updateWidgetConstructorStandingsUI(context: Context, widgetView: RemoteViews, constructorStandingsList: List<ConstructorStandings>?) {
     // RecyclerView not supported for widgets
     // 1
     if (constructorStandingsList != null) {
@@ -70,7 +70,7 @@ fun updateWidgetConstructorStandingsUI(context: Context, widgetView: RemoteViews
     }
 }
 
-fun updateConstructorStanding(context: Context, widgetView: RemoteViews, standing: Standings?, int: Int) {
+fun updateConstructorStanding(context: Context, widgetView: RemoteViews, standing: ConstructorStandings?, int: Int) {
     // Check Haas for text color
     val textColor = if (standing?.constructor?.constructorId == "haas") ResourcesCompat.getColor(context.resources, R.color.main_dark, null) else ResourcesCompat.getColor(context.resources, R.color.white, null)
 
