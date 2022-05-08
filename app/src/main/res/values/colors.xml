@@ -17,4 +17,14 @@
     <color name="formula_red_background_dark">#290400</color>
     <color name="background_dark">#313131</color>
     <color name="main_dark">#131313</color>
+    <color name="ferrari">#DC0000</color>
+    <color name="mercedes">#00D2BE</color>
+    <color name="red_bull">#0600EF</color>
+    <color name="williams">#005AFF</color>
+    <color name="aston_martin">#006F62</color>
+    <color name="mclaren">#FF8700</color>
+    <color name="haas">#FFFFFF</color>
+    <color name="alfa">#900000</color>
+    <color name="alpine">#0090FF</color>
+    <color name="alphatauri">#2B4562</color>
 </resources>
