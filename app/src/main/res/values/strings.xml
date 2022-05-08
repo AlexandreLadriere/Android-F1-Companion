@@ -52,6 +52,7 @@
     <string name="main_activity_widget_small_calendar_title">Calendar Small Widget</string>
     <string name="main_activity_widget_one_line_calendar_title">Calendar one Line Widget</string>
     <string name="main_activity_widget_constructor_standings_title">Constructor Standings Widget</string>
+    <string name="main_activity_widget_driver_standings_title">Top 10 Driver Standings Widget</string>
 
     <string name="main_activity_how_to_install_title">How To:</string>
     <string name="main_activity_how_to_install_step_1"><b>1-</b>  On your Home screen, touch and hold an empty space</string>
@@ -65,6 +66,7 @@
     <string name="add_widget">Add widget</string>
     <string name="app_widget_description">This widget displays main info of the next F1 race</string>
     <string name="app_widget_constructor_standings_description">This widget displays the constructor standings of the current season</string>
+    <string name="app_widget_driver_standings_description">This widget displays the top 10 driver standings of the current season</string>
 
     <!-- Info Activity -->
     <string name="info_activity_title">Information</string>
@@ -115,4 +117,55 @@
     <string name="appwidget_constructor_standings_tenth_ex">10</string>
     <string name="appwidget_constructor_standings_tenth_team_ex">Williams</string>
     <string name="appwidget_constructor_standings_tenth_points_ex">1 PTS</string>
+
+    <!-- Driver Standings -->
+    <string name="appwidget_driver_standings_first_ex">1</string>
+    <string name="appwidget_driver_standings_first_firstname_ex">Charles&#160;</string>
+    <string name="appwidget_driver_standings_first_lastname_ex">LECLERC</string>
+    <string name="appwidget_driver_standings_first_points_ex">86 PTS</string>
+
+    <string name="appwidget_driver_standings_second_ex">2</string>
+    <string name="appwidget_driver_standings_second_firstname_ex">Max&#160;</string>
+    <string name="appwidget_driver_standings_second_lastname_ex">VERSTAPPEN</string>
+    <string name="appwidget_driver_standings_second_points_ex">59 PTS</string>
+
+    <string name="appwidget_driver_standings_third_ex">3</string>
+    <string name="appwidget_driver_standings_third_firstname_ex">Sergio&#160;</string>
+    <string name="appwidget_driver_standings_third_lastname_ex">PEREZ</string>
+    <string name="appwidget_driver_standings_third_points_ex">54 PTS</string>
+
+    <string name="appwidget_driver_standings_fourth_ex">4</string>
+    <string name="appwidget_driver_standings_fourth_firstname_ex">George&#160;</string>
+    <string name="appwidget_driver_standings_fourth_lastname_ex">RUSSEL</string>
+    <string name="appwidget_driver_standings_fourth_points_ex">49 PTS</string>
+
+    <string name="appwidget_driver_standings_fifth_ex">5</string>
+    <string name="appwidget_driver_standings_fifth_firstname_ex">Carlos&#160;</string>
+    <string name="appwidget_driver_standings_fifth_lastname_ex">SAINZ</string>
+    <string name="appwidget_driver_standings_fifth_points_ex">38 PTS</string>
+
+    <string name="appwidget_driver_standings_sixth_ex">6</string>
+    <string name="appwidget_driver_standings_sixth_firstname_ex">Lando&#160;</string>
+    <string name="appwidget_driver_standings_sixth_lastname_ex">NORRIS</string>
+    <string name="appwidget_driver_standings_sixth_points_ex">35 PTS</string>
+
+    <string name="appwidget_driver_standings_seventh_ex">7</string>
+    <string name="appwidget_driver_standings_seventh_firstname_ex">Lewis&#160;</string>
+    <string name="appwidget_driver_standings_seventh_lastname_ex">HAMILTON</string>
+    <string name="appwidget_driver_standings_seventh_points_ex">28 PTS</string>
+
+    <string name="appwidget_driver_standings_eighth_ex">8</string>
+    <string name="appwidget_driver_standings_eighth_firstname_ex">Valtteri&#160;</string>
+    <string name="appwidget_driver_standings_eighth_lastname_ex">BOTTAS</string>
+    <string name="appwidget_driver_standings_eighth_points_ex">24 PTS</string>
+
+    <string name="appwidget_driver_standings_ninth_ex">9</string>
+    <string name="appwidget_driver_standings_ninth_firstname_ex">Esteban&#160;</string>
+    <string name="appwidget_driver_standings_ninth_lastname_ex">OCON</string>
+    <string name="appwidget_driver_standings_ninth_points_ex">20 PTS</string>
+
+    <string name="appwidget_driver_standings_tenth_ex">10</string>
+    <string name="appwidget_driver_standings_tenth_firstname_ex">Kevin&#160;</string>
+    <string name="appwidget_driver_standings_tenth_lastname_ex">MAGNUSSEN</string>
+    <string name="appwidget_driver_standings_tenth_points_ex">15 PTS</string>
 </resources>

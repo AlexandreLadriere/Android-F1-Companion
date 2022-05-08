@@ -1,0 +1,565 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.F1Companion.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.F1Companion.AppWidgetContainer"
+    android:gravity="center"
+    android:id="@+id/layout_driver_standings_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_driver_standings_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:id="@+id/layout_driver_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textview_driver_1_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/appwidget_driver_standings_first_ex"
+                android:text="@string/appwidget_driver_standings_first_ex"
+                android:textSize="@dimen/widget_text_size_1"
+                android:textStyle="bold"
+                android:layout_marginEnd="@dimen/activity_main_horizontal_margin"/>
+
+            <LinearLayout
+                android:id="@+id/layout_driver_1_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_ferrari"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_driver_1_firstname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_driver_standings_first_firstname_ex"
+                    android:text="@string/appwidget_driver_standings_first_firstname_ex"
+                    android:textSize="@dimen/widget_text_size_1" />
+
+                <TextView
+                    android:id="@+id/textview_driver_1_lastname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_driver_standings_first_lastname_ex"
+                    android:text="@string/appwidget_driver_standings_first_lastname_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textview_driver_1_points"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_driver_standings_first_points_ex"
+                    android:gravity="end"
+                    android:text="@string/appwidget_driver_standings_first_points_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_driver_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textview_driver_2_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/appwidget_driver_standings_second_ex"
+                android:text="@string/appwidget_driver_standings_second_ex"
+                android:textSize="@dimen/widget_text_size_1"
+                android:textStyle="bold"
+                android:layout_marginEnd="@dimen/activity_main_horizontal_margin"/>
+
+            <LinearLayout
+                android:id="@+id/layout_driver_2_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_red_bull"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_driver_2_firstname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_driver_standings_second_firstname_ex"
+                    android:text="@string/appwidget_driver_standings_second_firstname_ex"
+                    android:textSize="@dimen/widget_text_size_1" />
+
+                <TextView
+                    android:id="@+id/textview_driver_2_lastname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_driver_standings_second_lastname_ex"
+                    android:text="@string/appwidget_driver_standings_second_lastname_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textview_driver_2_points"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_driver_standings_second_points_ex"
+                    android:gravity="end"
+                    android:text="@string/appwidget_driver_standings_second_points_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_driver_3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textview_driver_3_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/appwidget_driver_standings_third_ex"
+                android:text="@string/appwidget_driver_standings_third_ex"
+                android:textSize="@dimen/widget_text_size_1"
+                android:textStyle="bold"
+                android:layout_marginEnd="@dimen/activity_main_horizontal_margin"/>
+
+            <LinearLayout
+                android:id="@+id/layout_driver_3_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_red_bull"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_driver_3_firstname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_driver_standings_third_firstname_ex"
+                    android:text="@string/appwidget_driver_standings_third_firstname_ex"
+                    android:textSize="@dimen/widget_text_size_1" />
+
+                <TextView
+                    android:id="@+id/textview_driver_3_lastname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_driver_standings_third_lastname_ex"
+                    android:text="@string/appwidget_driver_standings_third_lastname_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textview_driver_3_points"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_driver_standings_third_points_ex"
+                    android:gravity="end"
+                    android:text="@string/appwidget_driver_standings_third_points_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_driver_4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textview_driver_4_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/appwidget_driver_standings_fourth_ex"
+                android:text="@string/appwidget_driver_standings_fourth_ex"
+                android:textSize="@dimen/widget_text_size_1"
+                android:textStyle="bold"
+                android:layout_marginEnd="@dimen/activity_main_horizontal_margin"/>
+
+            <LinearLayout
+                android:id="@+id/layout_driver_4_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_mercedes"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_driver_4_firstname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_driver_standings_fourth_firstname_ex"
+                    android:text="@string/appwidget_driver_standings_fourth_firstname_ex"
+                    android:textSize="@dimen/widget_text_size_1" />
+
+                <TextView
+                    android:id="@+id/textview_driver_4_lastname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_driver_standings_fourth_lastname_ex"
+                    android:text="@string/appwidget_driver_standings_fourth_lastname_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textview_driver_4_points"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_driver_standings_fourth_points_ex"
+                    android:gravity="end"
+                    android:text="@string/appwidget_driver_standings_fourth_points_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_driver_5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textview_driver_5_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/appwidget_driver_standings_fifth_ex"
+                android:text="@string/appwidget_driver_standings_fifth_ex"
+                android:textSize="@dimen/widget_text_size_1"
+                android:textStyle="bold"
+                android:layout_marginEnd="@dimen/activity_main_horizontal_margin"/>
+
+            <LinearLayout
+                android:id="@+id/layout_driver_5_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_ferrari"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_driver_5_firstname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_driver_standings_fifth_firstname_ex"
+                    android:text="@string/appwidget_driver_standings_fifth_firstname_ex"
+                    android:textSize="@dimen/widget_text_size_1" />
+
+                <TextView
+                    android:id="@+id/textview_driver_5_lastname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_driver_standings_fifth_lastname_ex"
+                    android:text="@string/appwidget_driver_standings_fifth_lastname_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textview_driver_5_points"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_driver_standings_fifth_points_ex"
+                    android:gravity="end"
+                    android:text="@string/appwidget_driver_standings_fifth_points_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_driver_6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textview_driver_6_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/appwidget_driver_standings_sixth_ex"
+                android:text="@string/appwidget_driver_standings_sixth_ex"
+                android:textSize="@dimen/widget_text_size_1"
+                android:textStyle="bold"
+                android:layout_marginEnd="@dimen/activity_main_horizontal_margin"/>
+
+            <LinearLayout
+                android:id="@+id/layout_driver_6_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_mclaren"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_driver_6_firstname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_driver_standings_sixth_firstname_ex"
+                    android:text="@string/appwidget_driver_standings_sixth_firstname_ex"
+                    android:textSize="@dimen/widget_text_size_1" />
+
+                <TextView
+                    android:id="@+id/textview_driver_6_lastname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_driver_standings_sixth_lastname_ex"
+                    android:text="@string/appwidget_driver_standings_sixth_lastname_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textview_driver_6_points"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_driver_standings_sixth_points_ex"
+                    android:gravity="end"
+                    android:text="@string/appwidget_driver_standings_sixth_points_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_driver_7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textview_driver_7_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/appwidget_driver_standings_seventh_ex"
+                android:text="@string/appwidget_driver_standings_seventh_ex"
+                android:textSize="@dimen/widget_text_size_1"
+                android:textStyle="bold"
+                android:layout_marginEnd="@dimen/activity_main_horizontal_margin"/>
+
+            <LinearLayout
+                android:id="@+id/layout_driver_7_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_mercedes"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_driver_7_firstname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_driver_standings_seventh_firstname_ex"
+                    android:text="@string/appwidget_driver_standings_seventh_firstname_ex"
+                    android:textSize="@dimen/widget_text_size_1" />
+
+                <TextView
+                    android:id="@+id/textview_driver_7_lastname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_driver_standings_seventh_lastname_ex"
+                    android:text="@string/appwidget_driver_standings_seventh_lastname_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textview_driver_7_points"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_driver_standings_seventh_points_ex"
+                    android:gravity="end"
+                    android:text="@string/appwidget_driver_standings_seventh_points_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_driver_8"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textview_driver_8_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/appwidget_driver_standings_eighth_ex"
+                android:text="@string/appwidget_driver_standings_eighth_ex"
+                android:textSize="@dimen/widget_text_size_1"
+                android:textStyle="bold"
+                android:layout_marginEnd="@dimen/activity_main_horizontal_margin"/>
+
+            <LinearLayout
+                android:id="@+id/layout_driver_8_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_alfa"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_driver_8_firstname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_driver_standings_eighth_firstname_ex"
+                    android:text="@string/appwidget_driver_standings_eighth_firstname_ex"
+                    android:textSize="@dimen/widget_text_size_1" />
+
+                <TextView
+                    android:id="@+id/textview_driver_8_lastname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_driver_standings_eighth_lastname_ex"
+                    android:text="@string/appwidget_driver_standings_eighth_lastname_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textview_driver_8_points"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_driver_standings_eighth_points_ex"
+                    android:gravity="end"
+                    android:text="@string/appwidget_driver_standings_eighth_points_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_driver_9"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textview_driver_9_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/appwidget_driver_standings_ninth_ex"
+                android:text="@string/appwidget_driver_standings_ninth_ex"
+                android:textSize="@dimen/widget_text_size_1"
+                android:textStyle="bold"
+                android:layout_marginEnd="@dimen/activity_main_horizontal_margin"/>
+
+            <LinearLayout
+                android:id="@+id/layout_driver_9_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_alpine"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_driver_9_firstname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_driver_standings_ninth_firstname_ex"
+                    android:text="@string/appwidget_driver_standings_ninth_firstname_ex"
+                    android:textSize="@dimen/widget_text_size_1" />
+
+                <TextView
+                    android:id="@+id/textview_driver_9_lastname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_driver_standings_ninth_lastname_ex"
+                    android:text="@string/appwidget_driver_standings_ninth_lastname_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textview_driver_9_points"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_driver_standings_ninth_points_ex"
+                    android:gravity="end"
+                    android:text="@string/appwidget_driver_standings_ninth_points_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_driver_10"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textview_driver_10_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/appwidget_driver_standings_tenth_ex"
+                android:text="@string/appwidget_driver_standings_tenth_ex"
+                android:textSize="@dimen/widget_text_size_1"
+                android:textStyle="bold"
+                android:layout_marginEnd="@dimen/activity_main_element_padding"/>
+
+            <LinearLayout
+                android:id="@+id/layout_driver_10_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_haas"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_driver_10_firstname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_driver_standings_tenth_firstname_ex"
+                    android:text="@string/appwidget_driver_standings_tenth_firstname_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textColor="@color/background_dark"/>
+
+                <TextView
+                    android:id="@+id/textview_driver_10_lastname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_driver_standings_tenth_lastname_ex"
+                    android:text="@string/appwidget_driver_standings_tenth_lastname_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_dark"/>
+
+                <TextView
+                    android:id="@+id/textview_driver_10_points"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/appwidget_driver_standings_tenth_points_ex"
+                    android:gravity="end"
+                    android:text="@string/appwidget_driver_standings_tenth_points_ex"
+                    android:textSize="@dimen/widget_text_size_1"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_dark"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
