@@ -116,32 +116,6 @@
             <include layout="@layout/space"/>
 
             <TextView
-                android:id="@+id/textview_widget_constructor_standings_title"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/main_activity_widget_constructor_standings_title"
-                android:text="@string/main_activity_widget_constructor_standings_title"
-                android:textColor="@color/formula_red"
-                android:textSize="@dimen/widget_text_size_0"
-                android:textStyle="bold"
-                />
-
-            <LinearLayout
-                android:id="@+id/layout_widget_constructor_standings_calendar"
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:orientation="vertical"
-                android:background="@drawable/rounded_rectangle_border"
-                android:padding="@dimen/widget_padding_2"
-                android:layout_marginVertical="@dimen/activity_main_element_padding">
-
-                <include layout="@layout/constructor_standings_widget"/>
-
-            </LinearLayout>
-
-            <include layout="@layout/space"/>
-
-            <TextView
                 android:id="@+id/textview_widget_medium_calendar_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -214,6 +188,58 @@
                 android:layout_marginVertical="@dimen/activity_main_element_padding">
 
                 <include layout="@layout/calendar_one_line_widget"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/space"/>
+
+            <TextView
+                android:id="@+id/textview_widget_constructor_standings_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/main_activity_widget_constructor_standings_title"
+                android:text="@string/main_activity_widget_constructor_standings_title"
+                android:textColor="@color/formula_red"
+                android:textSize="@dimen/widget_text_size_0"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:id="@+id/layout_widget_constructor_standings_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_rectangle_border"
+                android:padding="@dimen/widget_padding_2"
+                android:layout_marginVertical="@dimen/activity_main_element_padding">
+
+                <include layout="@layout/constructor_standings_widget"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/space"/>
+
+            <TextView
+                android:id="@+id/textview_widget_driver_standings_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/main_activity_widget_driver_standings_title"
+                android:text="@string/main_activity_widget_driver_standings_title"
+                android:textColor="@color/formula_red"
+                android:textSize="@dimen/widget_text_size_0"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:id="@+id/layout_widget_driver_standings_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_rectangle_border"
+                android:padding="@dimen/widget_padding_2"
+                android:layout_marginVertical="@dimen/activity_main_element_padding">
+
+                <include layout="@layout/driver_standings_widget"/>
 
             </LinearLayout>
 

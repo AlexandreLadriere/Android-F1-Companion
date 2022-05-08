@@ -71,15 +71,20 @@ fun updateWidgetDriverStandingsUI(context: Context, widgetView: RemoteViews, dri
 
 fun updateDriverStanding(context: Context, widgetView: RemoteViews, standing: DriverStandings?, int: Int) {
     // Check Haas for text color
-    val textColor = if (standing?.constructor?.constructorId == "haas") ResourcesCompat.getColor(context.resources, R.color.main_dark, null) else ResourcesCompat.getColor(context.resources, R.color.white, null)
+    val textColor = if (standing?.constructor?.get(0)?.constructorId == "haas") ResourcesCompat.getColor(context.resources, R.color.main_dark, null) else ResourcesCompat.getColor(context.resources, R.color.white, null)
 
     val idLayoutDriverInfo: Int = context.resources.getIdentifier(
         "layout_driver_" + int + "_info",
         "id",
         context.packageName
     )
-    val idLayoutDriverTeam: Int = context.resources.getIdentifier(
-        "textview_driver_" + int + "_team",
+    val idLayoutDriverLastName: Int = context.resources.getIdentifier(
+        "textview_driver_" + int + "_lastname",
+        "id",
+        context.packageName
+    )
+    val idLayoutDriverFirstName: Int = context.resources.getIdentifier(
+        "textview_driver_" + int + "_firstname",
         "id",
         context.packageName
     )
@@ -88,12 +93,14 @@ fun updateDriverStanding(context: Context, widgetView: RemoteViews, standing: Dr
         "id",
         context.packageName
     )
-    widgetView.setTextViewText(idLayoutDriverTeam, standing?.constructor?.name ?: "null")
-    widgetView.setTextColor(idLayoutDriverTeam, textColor)
+    widgetView.setTextViewText(idLayoutDriverFirstName, standing?.driver?.givenName + " " ?: "null")
+    widgetView.setTextColor(idLayoutDriverFirstName, textColor)
+    widgetView.setTextViewText(idLayoutDriverLastName, standing?.driver?.familyName ?: "null")
+    widgetView.setTextColor(idLayoutDriverLastName, textColor)
     widgetView.setTextViewText(idLayoutDriverPoints, standing?.points + " PTS" ?: "null")
     widgetView.setTextColor(idLayoutDriverPoints, textColor)
     val resources: Resources = context.resources
-    val teamBackground = resources.getIdentifier("background_" + standing?.constructor?.constructorId.toString().replace(" ", "_").lowercase(), "drawable",
+    val teamBackground = resources.getIdentifier("background_" + standing?.constructor?.get(0)?.constructorId.toString().replace(" ", "_").lowercase(), "drawable",
         context.packageName
     )
     widgetView.setInt(idLayoutDriverInfo, "setBackgroundResource", teamBackground);

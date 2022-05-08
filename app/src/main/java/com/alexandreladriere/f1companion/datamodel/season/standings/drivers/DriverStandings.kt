@@ -20,5 +20,5 @@ data class DriverStandings(
     val driver: Driver? = null,
 
     @SerializedName("Constructors")
-    val constructor: Constructor? = null,
+    val constructor: List<Constructor>? = null,
 )

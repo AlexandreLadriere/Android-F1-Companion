@@ -1,6 +1,5 @@
 package com.alexandreladriere.f1companion.datamodel.season.standings.drivers
 
-import com.alexandreladriere.f1companion.datamodel.season.standings.constructors.Standings
 import com.google.gson.annotations.SerializedName
 
 data class DriverStandingsList(
