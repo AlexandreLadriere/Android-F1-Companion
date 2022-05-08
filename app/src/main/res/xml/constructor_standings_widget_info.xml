@@ -5,7 +5,7 @@
     android:initialLayout="@layout/constructor_standings_widget"
     android:minWidth="250dp"
     android:minHeight="180dp"
-    android:previewImage="@drawable/example_appwidget_preview"
+    android:previewImage="@drawable/widget_constructor_standings_preview"
     android:previewLayout="@layout/constructor_standings_widget"
     android:targetCellWidth="4"
     android:targetCellHeight="3"
