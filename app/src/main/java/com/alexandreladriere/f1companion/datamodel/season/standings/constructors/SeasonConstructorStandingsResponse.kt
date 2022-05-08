@@ -1,4 +1,4 @@
-package com.alexandreladriere.f1companion.datamodel.season.constructorstandings
+package com.alexandreladriere.f1companion.datamodel.season.standings.constructors
 
 import com.alexandreladriere.f1companion.datamodel.season.races.SeasonRacesData
 import com.google.gson.annotations.SerializedName
