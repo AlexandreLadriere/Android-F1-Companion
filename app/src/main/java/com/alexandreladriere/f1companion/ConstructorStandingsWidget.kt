@@ -4,8 +4,8 @@ import android.appwidget.AppWidgetManager
 import android.appwidget.AppWidgetProvider
 import android.content.Context
 import android.content.res.Resources
-import android.util.Log
 import android.widget.RemoteViews
+import androidx.core.content.res.ResourcesCompat
 import com.alexandreladriere.f1companion.api.ErgastApi
 import com.alexandreladriere.f1companion.api.RetrofitHelper
 import com.alexandreladriere.f1companion.datamodel.season.standings.constructors.Standings
@@ -63,19 +63,17 @@ fun updateWidgetConstructorStandingsUI(context: Context, widgetView: RemoteViews
     // RecyclerView not supported for widgets
     // 1
     if (constructorStandingsList != null) {
-        val test = constructorStandingsList.shuffled()
-
-        for (i in test.indices) {
-            Log.d("TEST", test[i].toString())
+        for (i in constructorStandingsList.indices) {
             updateConstructorStanding(context, widgetView,
-                test[i], i+1)
+                constructorStandingsList[i], i+1)
         }
     }
-    // updateConstructorStanding(context, widgetView, constructorStandingsList?.get(0), R.id.layout_constructor_first_info, R.id.textview_constructor_first_team, R.id.textview_constructor_first_points)
-
 }
 
 fun updateConstructorStanding(context: Context, widgetView: RemoteViews, standing: Standings?, int: Int) {
+    // Check Haas for text color
+    val textColor = if (standing?.constructor?.constructorId == "haas") ResourcesCompat.getColor(context.resources, R.color.main_dark, null) else ResourcesCompat.getColor(context.resources, R.color.white, null)
+
     val idLayoutConstructorInfo: Int = context.resources.getIdentifier(
         "layout_constructor_" + int + "_info",
         "id",
@@ -92,7 +90,9 @@ fun updateConstructorStanding(context: Context, widgetView: RemoteViews, standin
         context.packageName
     )
     widgetView.setTextViewText(idLayoutConstructorTeam, standing?.constructor?.name ?: "null")
+    widgetView.setTextColor(idLayoutConstructorTeam, textColor)
     widgetView.setTextViewText(idLayoutConstructorPoints, standing?.points ?: "null")
+    widgetView.setTextColor(idLayoutConstructorPoints, textColor)
     val resources: Resources = context.resources
     val teamBackground = resources.getIdentifier("background_" + standing?.constructor?.constructorId.toString().replace(" ", "_").lowercase(), "drawable",
         context.packageName
