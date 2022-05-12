@@ -10,5 +10,6 @@
     android:previewLayout="@layout/calendar_small_widget"
     android:targetCellWidth="2"
     android:targetCellHeight="2"
+    android:resizeMode="horizontal|vertical"
     android:updatePeriodMillis="3600000"
     android:widgetCategory="home_screen" />
