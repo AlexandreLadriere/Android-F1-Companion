@@ -1,8 +1,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/Widget.F1Companion.AppWidget.Container"
+    style="@style/Widget.Formulix.AppWidget.Container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:theme="@style/Theme.F1Companion.AppWidgetContainer"
+    android:theme="@style/Theme.Formulix.AppWidgetContainer"
     android:id="@+id/layout_one_line_calendar_parent"
     android:gravity="center">
 
